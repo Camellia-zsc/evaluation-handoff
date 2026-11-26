@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "server_id": "S1",
-  "snapshot_at": "2026-11-26T12:17:42.195657+08:00",
+  "snapshot_at": "2026-11-26T22:34:41.987563+08:00",
   "scope": "Verified local formal StreamingBench nonRealtime1750 records only; smoke excluded",
   "accuracy_aggregation": "Equal task weight; complete fixed denominators; exhausted failures count wrong",
   "timing_aggregation": "Mean across successful questions; native seconds includes cleanup",
@@ -342,15 +342,15 @@
     "C2": {
       "parent_document_group": "C2",
       "benchmark": "StreamingBench_nonRealtime1750",
-      "status": "running",
+      "status": "complete",
       "checkpoint_name": "StreamForest-Qwen2-7B",
       "mode": "eventkv",
       "frozen_config_sha256": "87488c6a24ee99a53c01b5a1aa76e55e1f86a71e462bca3a310245250c76b50c",
       "expected": 1750,
-      "attempted": 1442,
-      "successful": 1441,
-      "correct": null,
-      "failed": null,
+      "attempted": 1750,
+      "successful": 1750,
+      "correct": 679,
+      "failed": 0,
       "tasks": {
         "ER": {
           "status": "complete",
@@ -362,13 +362,13 @@
           "failed": 0
         },
         "MA": {
-          "status": "running_or_retry_pending",
+          "status": "complete",
           "expected": 250,
           "attempted": 250,
-          "successful": 249,
-          "accuracy": null,
-          "correct": null,
-          "failed": null
+          "successful": 250,
+          "accuracy": 0.484,
+          "correct": 121,
+          "failed": 0
         },
         "SCU": {
           "status": "complete",
@@ -398,102 +398,102 @@
           "failed": 0
         },
         "ACU": {
-          "status": "running_or_retry_pending",
+          "status": "complete",
           "expected": 250,
-          "attempted": 158,
-          "successful": 158,
-          "accuracy": null,
-          "correct": null,
-          "failed": null
+          "attempted": 250,
+          "successful": 250,
+          "accuracy": 0.376,
+          "correct": 94,
+          "failed": 0
         },
         "SQA": {
-          "status": "running_or_retry_pending",
+          "status": "complete",
           "expected": 250,
-          "attempted": 34,
-          "successful": 34,
-          "accuracy": null,
-          "correct": null,
-          "failed": null
+          "attempted": 250,
+          "successful": 250,
+          "accuracy": 0.392,
+          "correct": 98,
+          "failed": 0
         }
       },
       "accuracy_omni_task_macro": null,
       "accuracy_contextual_task_macro": null,
       "accuracy_seven_task_macro": null,
-      "mean_seconds_including_cleanup": null,
-      "peak_allocated_gib": null
+      "mean_seconds_including_cleanup": 38.212505199870364,
+      "peak_allocated_gib": 17.73961877822876
     },
     "C3": {
       "parent_document_group": "C3",
       "benchmark": "StreamingBench_nonRealtime1750",
-      "status": "queued",
+      "status": "running",
       "checkpoint_name": "StreamForest-Qwen2-7B",
       "mode": "eventkv",
       "frozen_config_sha256": "0c9f63a32f173073a1ecde3795a0887cf644b5d102b0f6a5ef7c937542d1ecd6",
       "expected": 1750,
-      "attempted": 0,
-      "successful": 0,
+      "attempted": 1509,
+      "successful": 1508,
       "correct": null,
       "failed": null,
       "tasks": {
         "ER": {
-          "status": "queued",
+          "status": "complete",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 250,
+          "successful": 250,
           "accuracy": null,
-          "correct": null,
-          "failed": null
+          "correct": 107,
+          "failed": 0
         },
         "MA": {
-          "status": "queued",
+          "status": "running_or_retry_pending",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 250,
+          "successful": 249,
           "accuracy": null,
           "correct": null,
           "failed": null
         },
         "SCU": {
-          "status": "queued",
+          "status": "complete",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 250,
+          "successful": 250,
           "accuracy": null,
-          "correct": null,
-          "failed": null
+          "correct": 74,
+          "failed": 0
         },
         "SD": {
-          "status": "queued",
+          "status": "complete",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 250,
+          "successful": 250,
           "accuracy": null,
-          "correct": null,
-          "failed": null
+          "correct": 101,
+          "failed": 0
         },
         "MCR": {
-          "status": "queued",
+          "status": "complete",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 250,
+          "successful": 250,
           "accuracy": null,
-          "correct": null,
-          "failed": null
+          "correct": 87,
+          "failed": 0
         },
         "ACU": {
-          "status": "queued",
+          "status": "running_or_retry_pending",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 196,
+          "successful": 196,
           "accuracy": null,
           "correct": null,
           "failed": null
         },
         "SQA": {
-          "status": "queued",
+          "status": "running_or_retry_pending",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 63,
+          "successful": 63,
           "accuracy": null,
           "correct": null,
           "failed": null
@@ -503,7 +503,7 @@
       "accuracy_contextual_task_macro": null,
       "accuracy_seven_task_macro": null,
       "mean_seconds_including_cleanup": null,
-      "peak_allocated_gib": null
+      "peak_allocated_gib": 17.759804248809814
     }
   },
   "StreamingBench_not_arranged": [
@@ -527,5 +527,6 @@
     "note": "17-task scores include unchanged verified realtime results already present in the report; B2 realtime was supplied from server2"
   },
   "status_policy": "../../docs/evaluation_status.json",
-  "A_group_additional_evaluations_scheduled": false
+  "A_group_additional_evaluations_scheduled": false,
+  "report_status": "C2 nonRealtime1750 complete; C3 nonRealtime1750 still running; partial C3 accuracy withheld"
 }

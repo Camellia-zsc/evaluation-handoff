@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T12:22:00.175716+08:00",
+  "updated_at": "2026-11-26T22:34:41.987563+08:00",
   "status_definitions": {
     "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
     "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
@@ -12,35 +12,22 @@
   },
   "A_group_additional_evaluations_scheduled": false,
   "S1_pending_evaluations": {
-    "C2": {
-      "benchmark": "StreamingBench_nonRealtime1750",
-      "pending_tasks": [
-        "MA",
-        "ACU",
-        "SQA"
-      ],
-      "waiting_aggregates": [
-        "Omni_4_task_macro",
-        "contextual_3_task_macro",
-        "all_17_task_macro"
-      ]
-    },
     "C3": {
       "benchmark": "StreamingBench_nonRealtime1750",
-      "pending_tasks": [
+      "completed_tasks": [
         "ER",
-        "MA",
         "SCU",
         "SD",
-        "MCR",
+        "MCR"
+      ],
+      "pending_tasks": [
+        "MA",
         "ACU",
         "SQA"
       ],
-      "waiting_aggregates": [
-        "Omni_4_task_macro",
-        "contextual_3_task_macro",
-        "all_17_task_macro"
-      ]
+      "attempted": 1509,
+      "expected": 1750,
+      "final_accuracy_published": false
     },
     "C7": {
       "benchmark": "OVOBench_full3035",
@@ -83,10 +70,24 @@
     "all_seven_report_tables_audited": true,
     "A_group_S1_or_S2_count": 0,
     "unmeasured_resources_S1_or_S2_count": 0,
-    "remaining_S1_cells": 45,
+    "remaining_S1_cells": 42,
     "remaining_S2_cells": 58,
     "all_existing_numeric_cells_preserved": true,
-    "evaluation_queue_changed": false
+    "evaluation_queue_changed": false,
+    "C2_nonrt_complete": true,
+    "C3_partial_not_published": true
   },
-  "rule": "A missing result is never evidence of authorization or of a scheduled experiment."
+  "rule": "A missing result is never evidence of authorization or of a scheduled experiment.",
+  "completed_evaluations": {
+    "C2_StreamingBench_nonRealtime1750": {
+      "attempted": 1750,
+      "successful": 1750,
+      "omni_macro": 0.394,
+      "context_macro": 0.38,
+      "nonrt_macro": 0.388,
+      "all_nonpo_macro": 0.6096,
+      "mean_seconds": 38.213,
+      "peak_allocated_gib": 17.74
+    }
+  }
 }
