@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-11-26T11:19:07.152552+08:00",
+  "updated_by": "S1",
+  "report_data_cutoff": "2026-11-26T11:14:01.251316+08:00",
+  "files": [
+    {
+      "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
+      "sha256": "527b386dc53099774b20946b31fded2ac338868e5d73e6e37718422e87e1a130",
+      "bytes": 84303
+    },
+    {
+      "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
+      "sha256": "6bcd154effa14ee0fa2be0c6baff68de7fd2ae0ccd642a7ed843bd2b474ad8d9",
+      "bytes": 353224
+    }
+  ],
+  "local_results_snapshot": "results/server1/latest.json",
+  "new_complete_groups": [
+    "B2/nonRealtime1750",
+    "C0/nonRealtime1750"
+  ],
+  "partial_group": "C2: publish ER/SCU/SD only; MA retry still pending",
+  "unchanged_external_pending_groups": [
+    "C5",
+    "C6"
+  ]
+}
