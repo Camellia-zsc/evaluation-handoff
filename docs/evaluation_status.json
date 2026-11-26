@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-26T12:22:00.175716+08:00",
+  "status_definitions": {
+    "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
+    "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
+    "未安排": "No additional evaluation arranged for this scope",
+    "未测": "The corresponding dedicated resource experiment has not been run and is not pending in the queue",
+    "未采集": "This metric was not recorded during the existing run",
+    "未支持": "Backend does not support this evaluation protocol",
+    "未覆盖全量": "Existing evaluated scopes do not cover all tasks needed for this aggregate"
+  },
+  "A_group_additional_evaluations_scheduled": false,
+  "S1_pending_evaluations": {
+    "C2": {
+      "benchmark": "StreamingBench_nonRealtime1750",
+      "pending_tasks": [
+        "MA",
+        "ACU",
+        "SQA"
+      ],
+      "waiting_aggregates": [
+        "Omni_4_task_macro",
+        "contextual_3_task_macro",
+        "all_17_task_macro"
+      ]
+    },
+    "C3": {
+      "benchmark": "StreamingBench_nonRealtime1750",
+      "pending_tasks": [
+        "ER",
+        "MA",
+        "SCU",
+        "SD",
+        "MCR",
+        "ACU",
+        "SQA"
+      ],
+      "waiting_aggregates": [
+        "Omni_4_task_macro",
+        "contextual_3_task_macro",
+        "all_17_task_macro"
+      ]
+    },
+    "C7": {
+      "benchmark": "OVOBench_full3035",
+      "parent_group": "C3",
+      "change": "Remove event text compensation only",
+      "status": "queued"
+    }
+  },
+  "S2_pending_evaluations": {
+    "C5": {
+      "benchmark": "OVOBench_full3035"
+    },
+    "C6": {
+      "benchmark": "OVOBench_full3035"
+    }
+  },
+  "StreamingBench_not_arranged": [
+    "B3",
+    "C1",
+    "C4",
+    "C5",
+    "C6",
+    "C7"
+  ],
+  "B1_scope": "nonRealtime1750 only; no realtime2500; no 17-task total",
+  "three_video_resource_unmeasured": [
+    "B2",
+    "B3",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7"
+  ],
+  "389_question_resource_unmeasured": [
+    "B2",
+    "C3"
+  ],
+  "checks": {
+    "all_seven_report_tables_audited": true,
+    "A_group_S1_or_S2_count": 0,
+    "unmeasured_resources_S1_or_S2_count": 0,
+    "remaining_S1_cells": 45,
+    "remaining_S2_cells": 58,
+    "all_existing_numeric_cells_preserved": true,
+    "evaluation_queue_changed": false
+  },
+  "rule": "A missing result is never evidence of authorization or of a scheduled experiment."
+}

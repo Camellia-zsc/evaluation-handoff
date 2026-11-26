@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "server_id": "S1",
-  "snapshot_at": "2026-11-26T11:14:01.251316+08:00",
+  "snapshot_at": "2026-11-26T12:17:42.195657+08:00",
   "scope": "Verified local formal StreamingBench nonRealtime1750 records only; smoke excluded",
   "accuracy_aggregation": "Equal task weight; complete fixed denominators; exhausted failures count wrong",
   "timing_aggregation": "Mean across successful questions; native seconds includes cleanup",
@@ -347,8 +347,8 @@
       "mode": "eventkv",
       "frozen_config_sha256": "87488c6a24ee99a53c01b5a1aa76e55e1f86a71e462bca3a310245250c76b50c",
       "expected": 1750,
-      "attempted": 1248,
-      "successful": 1247,
+      "attempted": 1442,
+      "successful": 1441,
       "correct": null,
       "failed": null,
       "tasks": {
@@ -389,28 +389,28 @@
           "failed": 0
         },
         "MCR": {
-          "status": "running_or_retry_pending",
+          "status": "complete",
           "expected": 250,
-          "attempted": 184,
-          "successful": 184,
-          "accuracy": null,
-          "correct": null,
-          "failed": null
+          "attempted": 250,
+          "successful": 250,
+          "accuracy": 0.372,
+          "correct": 93,
+          "failed": 0
         },
         "ACU": {
           "status": "running_or_retry_pending",
           "expected": 250,
-          "attempted": 64,
-          "successful": 64,
+          "attempted": 158,
+          "successful": 158,
           "accuracy": null,
           "correct": null,
           "failed": null
         },
         "SQA": {
-          "status": "queued",
+          "status": "running_or_retry_pending",
           "expected": 250,
-          "attempted": 0,
-          "successful": 0,
+          "attempted": 34,
+          "successful": 34,
           "accuracy": null,
           "correct": null,
           "failed": null
@@ -525,5 +525,7 @@
     "B2_StreamingBench_17_task_macro_percent": 63.36,
     "C0_StreamingBench_17_task_macro_percent": 60.8,
     "note": "17-task scores include unchanged verified realtime results already present in the report; B2 realtime was supplied from server2"
-  }
+  },
+  "status_policy": "../../docs/evaluation_status.json",
+  "A_group_additional_evaluations_scheduled": false
 }

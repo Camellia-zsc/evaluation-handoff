@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-26T11:19:07.152552+08:00",
+  "updated_at": "2026-11-26T12:22:00.175716+08:00",
   "updated_by": "S1",
-  "report_data_cutoff": "2026-11-26T11:14:01.251316+08:00",
+  "report_data_cutoff": "2026-11-26T12:17:42.195657+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
-      "sha256": "527b386dc53099774b20946b31fded2ac338868e5d73e6e37718422e87e1a130",
-      "bytes": 84303
+      "sha256": "4463f64d0c015b08bf300eb4dc358c6195e9649d7bdc50e23df05e1125a0f476",
+      "bytes": 84982
     },
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
-      "sha256": "6bcd154effa14ee0fa2be0c6baff68de7fd2ae0ccd642a7ed843bd2b474ad8d9",
-      "bytes": 353224
+      "sha256": "e2f0c204b7e46d85639b38d024f2b28374e34ed739bc30c160fa21ced88197aa",
+      "bytes": 352841
     }
   ],
   "local_results_snapshot": "results/server1/latest.json",
@@ -19,9 +19,17 @@
     "B2/nonRealtime1750",
     "C0/nonRealtime1750"
   ],
-  "partial_group": "C2: publish ER/SCU/SD only; MA retry still pending",
+  "partial_group": "C2: ER/SCU/SD/MCR complete; MA retry, ACU/SQA still pending",
   "unchanged_external_pending_groups": [
     "C5",
     "C6"
-  ]
+  ],
+  "status_policy": "docs/evaluation_status.json",
+  "status_audit": {
+    "all_tables_checked": true,
+    "A_pending_markers": 0,
+    "resource_only_pending_markers": 0,
+    "existing_numbers_preserved": true,
+    "new_completed_C2_task": "MCR 93/250 = 37.20%"
+  }
 }
