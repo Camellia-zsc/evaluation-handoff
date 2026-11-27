@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-27T10:52:31.678682+08:00",
+  "updated_at": "2026-11-27T11:06:50.388463+08:00",
   "updated_by": "S1",
-  "report_data_cutoff": "2026-11-27T10:52:31.678682+08:00",
+  "report_data_cutoff": "2026-11-27T11:06:50.388463+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
@@ -19,7 +19,7 @@
     "B2/nonRealtime1750",
     "C0/nonRealtime1750"
   ],
-  "partial_group": "C7: 1937/3035 attempted; final accuracy withheld; B1 realtime2500 queued",
+  "partial_group": "C7: 2079/3035 attempted; final accuracy withheld; B1 realtime2500 queued",
   "unchanged_external_pending_groups": [
     "C5",
     "C6"

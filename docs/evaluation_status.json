@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:52:31.678682+08:00",
+  "updated_at": "2026-11-27T11:06:50.388463+08:00",
   "status_definitions": {
     "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
     "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
@@ -34,8 +34,8 @@
       "parent_group": "C3",
       "change": "Remove event text compensation only",
       "status": "running",
-      "attempted": 1937,
-      "successful": 1937,
+      "attempted": 2079,
+      "successful": 2079,
       "expected": 3035,
       "final_accuracy_published": false
     },

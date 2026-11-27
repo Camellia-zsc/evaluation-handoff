@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "server_id": "S1",
-  "snapshot_at": "2026-11-27T10:52:31.678682+08:00",
+  "snapshot_at": "2026-11-27T11:06:50.388463+08:00",
   "scope": "Verified local formal StreamingBench nonRealtime1750 records; C7 OVOBench no-text ablation is partial; B1 real-time visual 2500 is queued; smoke excluded",
   "accuracy_aggregation": "Equal task weight; complete fixed denominators; exhausted failures count wrong",
   "timing_aggregation": "Mean across successful questions; native seconds includes cleanup",
@@ -519,8 +519,8 @@
     "parent_group": "C3",
     "change": "Remove all event-text compensation and management; retain visual KV retirement and NDA",
     "status": "running",
-    "attempted": 1937,
-    "successful": 1937,
+    "attempted": 2079,
+    "successful": 2079,
     "expected": 3035,
     "final_accuracy_published": false
   },
@@ -532,12 +532,12 @@
   },
   "status_policy": "../../docs/evaluation_status.json",
   "A_group_additional_evaluations_scheduled": false,
-  "report_status": "C2 nonRealtime1750 complete; C7 OVOBench no-text ablation running (1937/3035); B1 real-time visual 2500 queued behind C7; no partial accuracy published",
+  "report_status": "C2 nonRealtime1750 complete; C7 OVOBench no-text ablation running (2079/3035); B1 real-time visual 2500 queued behind C7; no partial accuracy published",
   "pending_evaluations": {
     "C7": {
       "benchmark": "OVOBench_full3035",
       "status": "running",
-      "attempted": 1937,
+      "attempted": 2079,
       "expected": 3035
     },
     "B1_RT": {

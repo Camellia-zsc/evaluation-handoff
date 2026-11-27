@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T10:52:31.678682+08:00",
+  "updated_at": "2026-11-27T11:06:50.388463+08:00",
   "experiment": "B1_StreamingBench_RT2500_20261127",
   "status": "queued",
   "dependency": {
     "experiment": "C7_OVOBench_full3035_no_event_text",
     "local_queue": "/home/workspace/zsc/outputs/streamforest_C3_no_text_ovo_full_20261123",
     "status": "running",
-    "attempted": 1937,
-    "successful": 1937,
+    "attempted": 2079,
+    "successful": 2079,
     "expected": 3035
   },
   "expected_questions": 2500,
