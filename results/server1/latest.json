@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "server_id": "S1",
-  "snapshot_at": "2026-11-26T22:34:41.987563+08:00",
-  "scope": "Verified local formal StreamingBench nonRealtime1750 records only; smoke excluded",
+  "snapshot_at": "2026-11-27T10:52:31.678682+08:00",
+  "scope": "Verified local formal StreamingBench nonRealtime1750 records; C7 OVOBench no-text ablation is partial; B1 real-time visual 2500 is queued; smoke excluded",
   "accuracy_aggregation": "Equal task weight; complete fixed denominators; exhausted failures count wrong",
   "timing_aggregation": "Mean across successful questions; native seconds includes cleanup",
   "publish_only_closed_tasks": true,
@@ -509,16 +509,20 @@
   "StreamingBench_not_arranged": [
     "B3",
     "C1",
-    "C4"
+    "C4",
+    "C5",
+    "C6"
   ],
-  "B1_scope": "Only nonRealtime1750; realtime2500 not arranged",
+  "B1_scope": "nonRealtime1750 complete; realtime2500 explicitly queued after C7; no combined 17-task total until both scopes are complete",
   "queued_OVOBench_ablation": {
     "document_group": "C7",
     "parent_group": "C3",
     "change": "Remove all event-text compensation and management; retain visual KV retirement and NDA",
-    "status": "queued",
-    "attempted": 0,
-    "expected": 3035
+    "status": "running",
+    "attempted": 1937,
+    "successful": 1937,
+    "expected": 3035,
+    "final_accuracy_published": false
   },
   "report_summary": {
     "B0_StreamingBench_17_task_macro_percent": 61.42,
@@ -528,5 +532,20 @@
   },
   "status_policy": "../../docs/evaluation_status.json",
   "A_group_additional_evaluations_scheduled": false,
-  "report_status": "C2 nonRealtime1750 complete; C3 nonRealtime1750 still running; partial C3 accuracy withheld"
+  "report_status": "C2 nonRealtime1750 complete; C7 OVOBench no-text ablation running (1937/3035); B1 real-time visual 2500 queued behind C7; no partial accuracy published",
+  "pending_evaluations": {
+    "C7": {
+      "benchmark": "OVOBench_full3035",
+      "status": "running",
+      "attempted": 1937,
+      "expected": 3035
+    },
+    "B1_RT": {
+      "benchmark": "StreamingBench_realtime2500",
+      "status": "queued",
+      "expected": 2500,
+      "dependency": "C7 complete",
+      "config_sha256": "a8beccc1265f26d0b81b5abacf88c6119c7117af1f7ebe44b61ea662009a0fcf"
+    }
+  }
 }

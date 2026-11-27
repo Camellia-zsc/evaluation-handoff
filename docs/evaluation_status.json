@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T22:34:41.987563+08:00",
+  "updated_at": "2026-11-27T10:52:31.678682+08:00",
   "status_definitions": {
     "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
     "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
@@ -33,7 +33,33 @@
       "benchmark": "OVOBench_full3035",
       "parent_group": "C3",
       "change": "Remove event text compensation only",
-      "status": "queued"
+      "status": "running",
+      "attempted": 1937,
+      "successful": 1937,
+      "expected": 3035,
+      "final_accuracy_published": false
+    },
+    "B1_RT": {
+      "benchmark": "StreamingBench_realtime2500",
+      "parent_group": "B1",
+      "change": "B1 Stage3 EviM real-time visual evaluation; legacy event400 configuration",
+      "status": "queued",
+      "expected": 2500,
+      "tasks": [
+        "OP",
+        "AP",
+        "TRU",
+        "CS",
+        "ATP",
+        "SPU",
+        "CNT",
+        "EU",
+        "CR",
+        "PR"
+      ],
+      "dependency": "C7 OVOBench_full3035 must finish first",
+      "config_sha256": "a8beccc1265f26d0b81b5abacf88c6119c7117af1f7ebe44b61ea662009a0fcf",
+      "final_accuracy_published": false
     }
   },
   "S2_pending_evaluations": {
@@ -49,10 +75,9 @@
     "C1",
     "C4",
     "C5",
-    "C6",
-    "C7"
+    "C6"
   ],
-  "B1_scope": "nonRealtime1750 only; no realtime2500; no 17-task total",
+  "B1_scope": "nonRealtime1750 complete; realtime2500 explicitly queued after C7; no combined 17-task total until both scopes are complete",
   "three_video_resource_unmeasured": [
     "B2",
     "B3",
@@ -60,7 +85,8 @@
     "C4",
     "C5",
     "C6",
-    "C7"
+    "C7",
+    "B1_RT"
   ],
   "389_question_resource_unmeasured": [
     "B2",
@@ -73,9 +99,11 @@
     "remaining_S1_cells": 42,
     "remaining_S2_cells": 58,
     "all_existing_numeric_cells_preserved": true,
-    "evaluation_queue_changed": false,
+    "evaluation_queue_changed": true,
     "C2_nonrt_complete": true,
-    "C3_partial_not_published": true
+    "C3_partial_not_published": true,
+    "B1_RT_queue_appended": true,
+    "C7_partial_not_published": true
   },
   "rule": "A missing result is never evidence of authorization or of a scheduled experiment.",
   "completed_evaluations": {

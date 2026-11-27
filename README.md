@@ -8,13 +8,13 @@
 - [已安排评测及状态定义](docs/evaluation_status.json)
 - [服务器1本次结果快照](results/server1/latest.json)
 
-## 本次更新：2026年11月26日
+## 本次更新：2026年11月27日
 
-补齐 B2、C0 的 StreamingBench 非实时七任务。结合已有实时视觉结果，17任务宏平均分别为 **63.36%**、**60.80%**；B0为61.42%。补入两组完整耗时及显存。C2非实时七任务已完成，17任务宏平均为60.96%；C3仍在评测，未发布部分成绩。既有OVOBench成绩保持原值。
+补齐 B2、C0 的 StreamingBench 非实时七任务，并保留 C2 的完整结果。C7（基于 C3、去除事件文字补偿的 OVOBench 消融）正在运行，当前已尝试 1937/3035 题，尚未发布部分准确率。B1 Stage3 EviM 的 StreamingBench 实时视觉 2500 题已经接在 C7 之后排队，配置快照与依赖状态已同步；既有 OVOBench 成绩保持原值。
 
 准确率先算各子任务，再对任务等权平均。完整范围缺少任一任务时不发布该范围总分；仍待重试的失败题不提前作为最终结果。耗时按成功问题逐问平均，本次新增耗时包含题后清理。
 
-StreamingBench非实时七任务只安排B0、B1、B2、C0、C2、C3。B1未安排实时视觉；B3、C1、C4未安排StreamingBench。C7为基于C3去文字补偿的全量OVOBench消融。
+StreamingBench非实时七任务已完成或安排 B0、B1、B2、C0、C2、C3；B1 的实时视觉 2500 题已明确排队，依赖 C7 完成。B3、C1、C4 未安排 StreamingBench。C7 是基于 C3 去文字补偿的全量 OVOBench 消融。
 
 ## 两台服务器如何同步
 
@@ -37,4 +37,4 @@ git push origin main
 
 汇总报告统一放在 `docs/`，本次由服务器1更新。先拉取两台服务器的最新结果，再由一台服务器更新Word、PDF及report_manifest.json并提交；Word是二进制文件，不同时编辑后自动合并。服务器2后续成绩按现有C5/C6等编号填写，不复用或重命名其他实验编号。
 
-S1/S2仅表示明确安排且尚未完成的评测，不是成绩，也不参与平均；缺数据不代表已经安排。A组未安排的任务标为未安排，范围不完整的总分标为未覆盖全量，未开展的独立资源测量标为未测；未支持和未采集分别保留其含义。当前S1只对应C2/C3的StreamingBench后续任务及C7全量OVOBench，S2对应C5/C6全量OVOBench，详见evaluation_status.json。`latest.json`是提交时的核验快照，运行进度不会自动上传；后续执行结果需要再次提交。
+S1/S2仅表示明确安排且尚未完成的评测，不是成绩，也不参与平均；缺数据不代表已经安排。A组未安排的任务标为未安排，范围不完整的总分标为未覆盖全量，未开展的独立资源测量标为未测；未支持和未采集分别保留其含义。当前 S1 包含 C7 的全量 OVOBench 消融及其之后的 B1 实时视觉 2500 题，S2 对应 C5/C6 全量 OVOBench，详见 evaluation_status.json。`latest.json` 是本次提交的核验快照；B1 的排队配置另见 `results/server1/pending_b1_streamingbench_rt_20261127.json`。完成后需再次提交最终成绩。
