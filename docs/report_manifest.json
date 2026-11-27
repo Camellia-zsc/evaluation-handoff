@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
-      "sha256": "4264f75db2f4f4f787945b225b82af1bd2020df8d2c4dc46c010c2852977ba27",
-      "bytes": 79338
+      "sha256": "8bb0ac9eda594f9898536e4eda9a6629fe7c6a136f7e6a93af9b049f9287e12d",
+      "bytes": 79044
     },
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
-      "sha256": "311d5391b19a08ef2d55821d26da7f3cb11f78f0eab0914a4a18f5f09fafee80",
-      "bytes": 302775
+      "sha256": "58e68fb8b5c8318fa765f6d9f1df127e7a96782319f6b939ee9c11822b42e682",
+      "bytes": 303519
     }
   ],
   "local_results_snapshot": "results/server1/latest.json",
