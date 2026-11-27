@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "updated_at": "2026-11-27T11:13:38+08:00",
+  "source": "remote_execution/c3_ablation_no_visual_kv_final_report/summary.json",
+  "C5_final": {
+    "successful": 3035,
+    "correct": 1638,
+    "failed": 0,
+    "task_macro_percent": 57.2293
+  },
+  "C6_progress": {
+    "successful": 819,
+    "correct": 467,
+    "failed": 0,
+    "status": "running_shard0"
+  },
+  "blue_new_data": true,
+  "blue_color": "4F81BD/accent1",
+  "document_verification": {
+    "status": "passed",
+    "updated_at": "2026-11-27T10:48:22+08:00",
+    "source_c5_report": "/data/users/zengsichao/home/StreamForest/remote_execution/c3_ablation_no_visual_kv_final_report/summary.json",
+    "c5_final": {
+      "successful": 3035,
+      "correct": 1638,
+      "task_macro_percent": 57.22931564583439,
+      "question_seconds_sum": 71343.12465558716,
+      "question_seconds_mean": 23.506795603158867,
+      "worker_wall_lower_bound_seconds": 72146.36396098137
+    },
+    "c6_live_snapshot": {
+      "successful": 819,
+      "correct": 467,
+      "failed": 0,
+      "question_seconds_mean": 39.18249435924529,
+      "status": "running_shard0"
+    },
+    "blue_new_data": true,
+    "blue_color": "4F81BD/accent1",
+    "changed_tables": [
+      "table2 C5 OVOBench group/overall macro",
+      "table3 C5 twelve task accuracies and macro columns",
+      "table6 C5 final timing and GPU resource row",
+      "table7 C5 final full-run mean",
+      "table1 C5 configuration row blue"
+    ],
+    "changed_paragraphs": [
+      {
+        "before": "本次服务器2新增C5（基于C3去视觉KV转存）与C6（基于C3以滑动窗口替代S评分）。截至2026-11-26T13:04:00+08:00，C5正式完成647/3035问，失败0；C6正式完成0/3035问，等待C5完成后接续。两组均已通过独立三题流程验收。S2表示仍在服务器2评测或排队，最终准确率与资源数据待完成后补入。两组本次仅安排全量OVOBench，StreamingBench写“-”，独立三视频计时写未测。C5当前成功题耗时累计24575.17秒，均值37.983秒/问，allocated/reserved峰值分别为17.591/18.615 GiB。上述为未完成阶段快照，不作为全量最终结果；服务器中断的停机等待不计为推理，无法确定退出时刻的worker墙钟按已核实下界记录。",
+        "after": "本次服务器2新增C5（基于C3去视觉KV转存）与C6（基于C3以滑动窗口替代S评分）。截至2026-11-27T10:48:22+08:00，C5正式完成3035/3035问，答对1638题，12任务宏平均57.23%，失败0；C6正式完成777/3035问，答对443题，失败0，仍在服务器2评测。C5问级累计耗时71343.12秒，成功题均值23.507秒/问，allocated/reserved峰值17.591/18.617 GiB；C6当前成功题均值39.424秒/问。C5的最终准确率、耗时和显存已补入下方表格，C6未完成数据继续标S2；服务器中断停机等待不计为推理，无法确定退出时刻的worker墙钟按已核实下界记录。",
+        "blue": true
+      },
+      {
+        "before": "本补表统计各独立评测的正式题目，均使用物理GPU3（RTX 4090）。B2实时视觉评测已完成，以下补入正式耗时与显存。C5/C6的全量数据暂标S2。",
+        "after": "本补表统计各独立评测的正式题目，均使用物理GPU3（RTX 4090）。B2实时视觉评测已完成，C5 OVOBench全量评测已完成，以下补入C5最终耗时与显存；C6仍在服务器2评测，表中暂标S2。",
+        "blue": true
+      },
+      {
+        "before": "本次B2实时视觉数据取自remote_execution/stage3_streamingbench_rt_final_report/summary.json及其已核验结果包。C5/C6配置与状态取自remote_execution/c3_ablation_prepare/request.json、各自冻结配置和c3_ablation_execution_summary.json。汇总准确率继续按任务等权，S2不参与准确率计算。NVML进程与设备峰值分别保留原报告口径。本次服务器2核验快照及断点恢复计时说明见results/server2/latest.json。",
+        "after": "本次B2实时视觉数据取自remote_execution/stage3_streamingbench_rt_final_report/summary.json及其已核验结果包。C5最终数据取自remote_execution/c3_ablation_no_visual_kv_final_report/summary.json及其结果包；C6当前进度与临时资源取自remote_execution/live_progress.json。汇总准确率继续按任务等权，S2不参与准确率计算；C5中断worker的墙钟使用可核实下界。",
+        "blue": true
+      },
+      {
+        "before": "新增B2实时视觉与C5/C6全量资源行取原执行器seconds，包含题后清理。完整问后耗时与TTFT未采集，相应新增单元格写未采集。C5/C6的最终全量均值与显存等待评测完成，标为S2。原389问和三视频的既有数据沿用原值。",
+        "after": "新增B2实时视觉与C5/C6全量资源行取原执行器seconds，包含题后清理。C5 OVOBench已完成，表中补入最终问级耗时、worker墙钟下界和显存；完整问后耗时与TTFT未采集。C6仍在评测，最终均值和显存继续标S2；原389问和三视频的既有数据沿用原值。",
+        "blue": true
+      },
+      {
+        "before": "",
+        "after": "新增C5消融结果：关闭旧事件视觉KV转存后，OVOBench 12任务宏平均为57.23%，低于C3基线58.12% 0.89个百分点；回溯、实时感知、前向响应三大类宏平均分别为51.30%、62.63%、52.36%。C5成功题均值23.507秒，allocated峰值17.591 GiB；该结果支持整套去视觉KV转存配置的准确率与资源取舍，不能单独归因于某个其他组件。",
+        "blue": true,
+        "inserted_after": "本次B2实时视觉数据取自remote_execution/stage3_streamingbench_rt_final_report/summary.json及其已核验结果包。C5/C6配置与状态取自remote_execution/c3_ablation_prepare/request.json、各自冻结配置和c3_ablation_execution_summary.json。汇总准确率继续按任务等权，S2不参与准确率计算。NVML进程与设备峰值分别保留原报告口径。本次服务器2核验快照及断点恢复计时说明见results/server2/latest.json。"
+      }
+    ],
+    "before_sha256": "b0915aef0d7c371b0a9f658ed83a05eb95136d0025570df7f26448a73936173f",
+    "after_sha256": "0c199f81085d59fd402ef6710a1b5a1425f96aa2ac8dbebb0106e24595eb6540",
+    "shared_matches_local": true,
+    "non_document_zip_entries_unchanged": 23
+  },
+  "unscheduled_display": "-",
+  "source_server": "S2",
+  "merged_into_remote_server1_base": true
+}

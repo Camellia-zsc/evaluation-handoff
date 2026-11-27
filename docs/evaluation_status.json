@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T11:06:50.388463+08:00",
+  "updated_at": "2026-11-27T11:13:38+08:00",
   "status_definitions": {
     "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
     "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
@@ -63,11 +63,14 @@
     }
   },
   "S2_pending_evaluations": {
-    "C5": {
-      "benchmark": "OVOBench_full3035"
-    },
     "C6": {
-      "benchmark": "OVOBench_full3035"
+      "benchmark": "OVOBench_full3035",
+      "status": "running_shard0",
+      "successful": 819,
+      "correct": 467,
+      "failed": 0,
+      "expected": 3035,
+      "snapshot_at": "2026-11-27T11:13:38+08:00"
     }
   },
   "StreamingBench_not_arranged": [
@@ -103,7 +106,12 @@
     "C2_nonrt_complete": true,
     "C3_partial_not_published": true,
     "B1_RT_queue_appended": true,
-    "C7_partial_not_published": true
+    "C7_partial_not_published": true,
+    "C5_final_data_updated": true,
+    "C5_final_task_macro_percent": 57.2293,
+    "C6_live_progress_successful": 819,
+    "new_data_blue": true,
+    "server1_queue_preserved": true
   },
   "rule": "A missing result is never evidence of authorization or of a scheduled experiment.",
   "completed_evaluations": {
@@ -116,6 +124,18 @@
       "all_nonpo_macro": 0.6096,
       "mean_seconds": 38.213,
       "peak_allocated_gib": 17.74
+    }
+  },
+  "updated_by": "S2",
+  "completed_server2_evaluations": {
+    "C5": {
+      "benchmark": "OVOBench_full3035",
+      "successful": 3035,
+      "correct": 1638,
+      "failed": 0,
+      "task_macro_percent": 57.2293,
+      "completed_at": "2026-11-27T02:14:00+08:00",
+      "final_report": "remote_execution/c3_ablation_no_visual_kv_final_report/summary.json"
     }
   }
 }

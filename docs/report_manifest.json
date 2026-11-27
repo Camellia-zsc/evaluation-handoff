@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-27T11:06:50.388463+08:00",
-  "updated_by": "S1",
-  "report_data_cutoff": "2026-11-27T11:06:50.388463+08:00",
+  "updated_at": "2026-11-27T11:13:38+08:00",
+  "updated_by": "S2",
+  "report_data_cutoff": "2026-11-27T11:13:38+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
-      "sha256": "8bb0ac9eda594f9898536e4eda9a6629fe7c6a136f7e6a93af9b049f9287e12d",
-      "bytes": 79044
+      "sha256": "e417282d90d61521070494adfbb25434984123bf49228d7d2c8f22ad09090a49",
+      "bytes": 80161
     },
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
-      "sha256": "58e68fb8b5c8318fa765f6d9f1df127e7a96782319f6b939ee9c11822b42e682",
-      "bytes": 303519
+      "sha256": "bfff3811d9bd834a5aabf917491f8793f0a47bd93521268dd46fb1d9a67976c8",
+      "bytes": 1169136
     }
   ],
   "local_results_snapshot": "results/server1/latest.json",
@@ -30,10 +30,54 @@
     "A_pending_markers": 0,
     "resource_only_pending_markers": 0,
     "existing_numbers_preserved": true,
-    "new_completed_C2_task": "C2 non-real-time seven tasks complete; 60.96% all non-PO macro"
+    "new_completed_C2_task": "C2 non-real-time seven tasks complete; 60.96% all non-PO macro",
+    "C5_final_data_updated": true,
+    "C5_final_task_macro_percent": 57.2293,
+    "C6_live_progress_successful": 819,
+    "new_data_blue": true,
+    "remote_server1_content_preserved": true
   },
   "new_pending_groups": [
     "B1/StreamingBench_realtime2500"
   ],
-  "queue_snapshot": "results/server1/pending_b1_streamingbench_rt_20261127.json"
+  "queue_snapshot": "results/server1/pending_b1_streamingbench_rt_20261127.json",
+  "server_results_snapshots": [
+    "results/server1/latest.json",
+    "results/server2/latest.json"
+  ],
+  "server2_progress": {
+    "snapshot_at": "2026-11-27T11:13:38+08:00",
+    "C5": {
+      "successful": 3035,
+      "correct": 1638,
+      "failed": 0,
+      "task_macro_percent": 57.2293
+    },
+    "C6": {
+      "successful": 819,
+      "correct": 467,
+      "failed": 0,
+      "status": "running_shard0"
+    }
+  },
+  "completed_server2_groups": [
+    "C5/OVOBench_full3035"
+  ],
+  "pending_groups": {
+    "S1": [
+      "C3/StreamingBench_nonRealtime1750",
+      "C7/OVOBench_full3035",
+      "B1/StreamingBench_realtime2500"
+    ],
+    "S2": [
+      "C6/OVOBench_full3035"
+    ]
+  },
+  "pdf_export": {
+    "producer": "LibreOffice 24.2",
+    "pages": 17,
+    "matches_updated_docx": true,
+    "updated_data_visible_in_pdf": true,
+    "blue_data_color": "4F81BD/accent1"
+  }
 }
