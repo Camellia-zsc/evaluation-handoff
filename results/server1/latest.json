@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "server_id": "S1",
-  "snapshot_at": "2026-11-28T16:28:24.457876+08:00",
+  "snapshot_at": "2026-11-28T16:30:11.277114+08:00",
   "scope": "Verified local formal StreamingBench nonRealtime1750 records; C7 OVOBench no-text ablation is partial; B1 real-time visual 2500 is queued; smoke excluded",
   "accuracy_aggregation": "Equal task weight; complete fixed denominators; exhausted failures count wrong",
   "timing_aggregation": "Mean across successful questions; native seconds includes cleanup",
@@ -534,13 +534,13 @@
   },
   "status_policy": "../../docs/evaluation_status.json",
   "A_group_additional_evaluations_scheduled": false,
-  "report_status": "C3 nonRealtime1750 complete with one B0 exhausted failure; C7 OVOBench no-text complete (3035/3035, 58.48% task macro); B1 real-time visual running (55/2500)",
+  "report_status": "C3 nonRealtime1750 complete with one B0 exhausted failure; C7 OVOBench no-text complete (3035/3035, 58.48% task macro); B1 real-time visual running (59/2500)",
   "pending_evaluations": {
     "B1_RT": {
       "benchmark": "StreamingBench_realtime2500",
       "status": "running",
-      "attempted": 55,
-      "successful": 55,
+      "attempted": 59,
+      "successful": 59,
       "expected": 2500,
       "dependency": "C7 complete"
     }

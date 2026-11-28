@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T16:28:24.457876+08:00",
+  "updated_at": "2026-11-28T16:30:11.277114+08:00",
   "status_definitions": {
     "S1": "Only an explicitly scheduled and unfinished evaluation on server1, including aggregates waiting for its component tasks",
     "S2": "Only an explicitly scheduled and unfinished evaluation on server2",
@@ -18,8 +18,8 @@
       "change": "B1 Stage3 EviM real-time visual evaluation; legacy event400 configuration",
       "status": "running",
       "expected": 2500,
-      "attempted": 55,
-      "successful": 55,
+      "attempted": 59,
+      "successful": 59,
       "tasks": [
         "OP",
         "AP",

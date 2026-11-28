@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-28T16:28:24.457876+08:00",
+  "updated_at": "2026-11-28T16:30:11.277114+08:00",
   "updated_by": "S2",
-  "report_data_cutoff": "2026-11-28T16:28:24.457876+08:00",
+  "report_data_cutoff": "2026-11-28T16:30:11.277114+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
@@ -21,7 +21,7 @@
     "C3/StreamingBench_nonRealtime1750",
     "C7/OVOBench_full3035_no_event_text"
   ],
-  "partial_group": "B1/StreamingBench_realtime2500: 55/2500 running",
+  "partial_group": "B1/StreamingBench_realtime2500: 59/2500 running",
   "unchanged_external_pending_groups": [
     "C5",
     "C6"
