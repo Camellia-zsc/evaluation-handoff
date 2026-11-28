@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-27T11:13:38+08:00",
+  "updated_at": "2026-11-28T01:21:28+08:00",
   "updated_by": "S2",
-  "report_data_cutoff": "2026-11-27T11:13:38+08:00",
+  "report_data_cutoff": "2026-11-28T01:21:28+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
-      "sha256": "e417282d90d61521070494adfbb25434984123bf49228d7d2c8f22ad09090a49",
-      "bytes": 80161
+      "sha256": "19b6c07c89a69e66d03fa5e18d4fb42e8c90f35cf8c4034bfc700ece4010bfc4",
+      "bytes": 80357
     },
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
-      "sha256": "bfff3811d9bd834a5aabf917491f8793f0a47bd93521268dd46fb1d9a67976c8",
-      "bytes": 1169136
+      "sha256": "811c16757b74e8f6e0427bbf0acb855d09f398c16721f7145be041b41e1023e1",
+      "bytes": 1172879
     }
   ],
   "local_results_snapshot": "results/server1/latest.json",
@@ -35,7 +35,10 @@
     "C5_final_task_macro_percent": 57.2293,
     "C6_live_progress_successful": 819,
     "new_data_blue": true,
-    "remote_server1_content_preserved": true
+    "remote_server1_content_preserved": true,
+    "C6_final_data_updated": true,
+    "C6_final_task_macro_percent": 57.8514,
+    "S2_queue_complete": true
   },
   "new_pending_groups": [
     "B1/StreamingBench_realtime2500"
@@ -46,7 +49,7 @@
     "results/server2/latest.json"
   ],
   "server2_progress": {
-    "snapshot_at": "2026-11-27T11:13:38+08:00",
+    "snapshot_at": "2026-11-28T01:21:28+08:00",
     "C5": {
       "successful": 3035,
       "correct": 1638,
@@ -54,14 +57,15 @@
       "task_macro_percent": 57.2293
     },
     "C6": {
-      "successful": 819,
-      "correct": 467,
+      "successful": 3035,
+      "correct": 1652,
       "failed": 0,
-      "status": "running_shard0"
+      "status": "complete"
     }
   },
   "completed_server2_groups": [
-    "C5/OVOBench_full3035"
+    "C5/OVOBench_full3035",
+    "C6/OVOBench_full3035"
   ],
   "pending_groups": {
     "S1": [
@@ -69,9 +73,7 @@
       "C7/OVOBench_full3035",
       "B1/StreamingBench_realtime2500"
     ],
-    "S2": [
-      "C6/OVOBench_full3035"
-    ]
+    "S2": []
   },
   "pdf_export": {
     "producer": "LibreOffice 24.2",

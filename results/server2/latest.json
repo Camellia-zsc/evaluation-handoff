@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "server_id": "S2",
-  "snapshot_at": "2026-11-27T11:13:38+08:00",
+  "snapshot_at": "2026-11-28T01:21:28+08:00",
   "physical_gpu_constraint": [
     3
   ],
@@ -4574,7 +4574,7 @@
       "parent_configuration": "C3",
       "checkpoint_name": "StreamForest-Qwen2-7B",
       "benchmark": "OVOBench_full3035",
-      "status": "running_shard0",
+      "status": "complete",
       "physical_gpu": 3,
       "visual_compression": [
         729,
@@ -4762,657 +4762,4047 @@
       },
       "statistics": {
         "expected": 3035,
-        "attempted": 0,
-        "successful": 0,
-        "correct": 0,
+        "attempted": 3035,
+        "successful": 3035,
+        "correct": 1652,
         "empty_answers": 0,
         "failed": 0,
         "historical_failed_attempts": 0,
-        "unattempted": 3035,
-        "unfinished": 3035,
-        "coverage_complete": false,
-        "attempt_complete": false,
-        "accuracy_fixed_denominator": null,
-        "interim_accuracy_attempted": null,
+        "unattempted": 0,
+        "unfinished": 0,
+        "coverage_complete": true,
+        "attempt_complete": true,
+        "accuracy_fixed_denominator": 0.544316309719934,
+        "interim_accuracy_attempted": 0.544316309719934,
         "timing": {
           "successful_question_seconds": {
-            "count": 0,
-            "sum": 0,
-            "mean": null,
-            "min": null,
-            "max": null
+            "count": 3035,
+            "sum": 82339.25258367055,
+            "mean": 27.1299020045043,
+            "min": 0.6853636539890431,
+            "max": 431.505782163993
           },
           "all_attempt_seconds": {
-            "count": 0,
-            "sum": 0,
-            "mean": null,
-            "min": null,
-            "max": null
+            "count": 3035,
+            "sum": 82339.25258367055,
+            "mean": 27.1299020045043,
+            "min": 0.6853636539890431,
+            "max": 431.505782163993
           },
           "stages": {
-            "successful": {},
-            "all_attempts": {}
+            "successful": {
+              "answer_decode_seconds": {
+                "count": 3035,
+                "sum": 93.22316291809082,
+                "mean": 0.03071603391040884,
+                "min": 0.02594713592529297,
+                "max": 0.4069652500152588
+              },
+              "answer_prefill_seconds": {
+                "count": 3035,
+                "sum": 115.08002663993835,
+                "mean": 0.03791763645467491,
+                "min": 0.02971216011047363,
+                "max": 0.07547494506835938
+              },
+              "answer_seconds": {
+                "count": 3035,
+                "sum": 229.05415067492868,
+                "mean": 0.07547088984346909,
+                "min": 0.06231908001063857,
+                "max": 0.5075404020026326
+              },
+              "cleanup_seconds": {
+                "count": 3035,
+                "sum": 562.1869418171991,
+                "mean": 0.18523457720500794,
+                "min": 0.12285167799564078,
+                "max": 1.6720802609925158
+              },
+              "e2e_seconds": {
+                "count": 3035,
+                "sum": 82336.5335964327,
+                "mean": 27.129006127325436,
+                "min": 0.684558199980529,
+                "max": 431.50479460999486
+              },
+              "memory_manage_seconds": {
+                "count": 3035,
+                "sum": 18213.85650444444,
+                "mean": 6.001270676917443,
+                "min": 0.2646202500036452,
+                "max": 93.25933322904166
+              },
+              "preprocess_seconds": {
+                "count": 3035,
+                "sum": 8219.909633578965,
+                "mean": 2.708372202167699,
+                "min": 0.019246734998887405,
+                "max": 31.948935117019573
+              },
+              "video_decode_seconds": {
+                "count": 3035,
+                "sum": 47739.91487195235,
+                "mean": 15.729790732109507,
+                "min": 0.03447763601434417,
+                "max": 335.90408278399264
+              },
+              "video_to_answer_seconds": {
+                "count": 3035,
+                "sum": 81773.14784148055,
+                "mean": 26.943376554029832,
+                "min": 0.5054329699778464,
+                "max": 430.64399564501946
+              },
+              "vision_encode_seconds": {
+                "count": 3035,
+                "sum": 7341.148407164481,
+                "mean": 2.41882978819258,
+                "min": 0.047751225996762514,
+                "max": 20.524725225986913
+              },
+              "within_memory_answer_visual_prefill_seconds": {
+                "count": 3035,
+                "sum": 5344.66528162788,
+                "mean": 1.7610099774721186,
+                "min": 0.2297069779888261,
+                "max": 2.3935756770079024
+              },
+              "within_memory_event_prefill_seconds": {
+                "count": 3035,
+                "sum": 1615.3929822017963,
+                "mean": 0.5322546893580877,
+                "min": 0.0,
+                "max": 7.970315749000292
+              },
+              "within_memory_kv_compression_seconds": {
+                "count": 3035,
+                "sum": 213.21079966660182,
+                "mean": 0.07025067534319665,
+                "min": 0.0,
+                "max": 1.7294316579354927
+              },
+              "within_memory_summary_append_seconds": {
+                "count": 3035,
+                "sum": 9489.506955937439,
+                "mean": 3.126690924526339,
+                "min": 0.0,
+                "max": 73.70111628100858
+              },
+              "within_memory_summary_rewrite_seconds": {
+                "count": 3035,
+                "sum": 272.4799094963528,
+                "mean": 0.08977921235464671,
+                "min": 0.0,
+                "max": 6.839849623036571
+              },
+              "within_memory_summary_seconds": {
+                "count": 3035,
+                "sum": 9761.986865433792,
+                "mean": 3.216470136880986,
+                "min": 0.0,
+                "max": 80.54096590404515
+              }
+            },
+            "all_attempts": {
+              "answer_decode_seconds": {
+                "count": 3035,
+                "sum": 93.22316291809082,
+                "mean": 0.03071603391040884,
+                "min": 0.02594713592529297,
+                "max": 0.4069652500152588
+              },
+              "answer_prefill_seconds": {
+                "count": 3035,
+                "sum": 115.08002663993835,
+                "mean": 0.03791763645467491,
+                "min": 0.02971216011047363,
+                "max": 0.07547494506835938
+              },
+              "answer_seconds": {
+                "count": 3035,
+                "sum": 229.05415067492868,
+                "mean": 0.07547088984346909,
+                "min": 0.06231908001063857,
+                "max": 0.5075404020026326
+              },
+              "cleanup_seconds": {
+                "count": 3035,
+                "sum": 562.1869418171991,
+                "mean": 0.18523457720500794,
+                "min": 0.12285167799564078,
+                "max": 1.6720802609925158
+              },
+              "e2e_seconds": {
+                "count": 3035,
+                "sum": 82336.5335964327,
+                "mean": 27.129006127325436,
+                "min": 0.684558199980529,
+                "max": 431.50479460999486
+              },
+              "memory_manage_seconds": {
+                "count": 3035,
+                "sum": 18213.85650444444,
+                "mean": 6.001270676917443,
+                "min": 0.2646202500036452,
+                "max": 93.25933322904166
+              },
+              "preprocess_seconds": {
+                "count": 3035,
+                "sum": 8219.909633578965,
+                "mean": 2.708372202167699,
+                "min": 0.019246734998887405,
+                "max": 31.948935117019573
+              },
+              "video_decode_seconds": {
+                "count": 3035,
+                "sum": 47739.91487195235,
+                "mean": 15.729790732109507,
+                "min": 0.03447763601434417,
+                "max": 335.90408278399264
+              },
+              "video_to_answer_seconds": {
+                "count": 3035,
+                "sum": 81773.14784148055,
+                "mean": 26.943376554029832,
+                "min": 0.5054329699778464,
+                "max": 430.64399564501946
+              },
+              "vision_encode_seconds": {
+                "count": 3035,
+                "sum": 7341.148407164481,
+                "mean": 2.41882978819258,
+                "min": 0.047751225996762514,
+                "max": 20.524725225986913
+              },
+              "within_memory_answer_visual_prefill_seconds": {
+                "count": 3035,
+                "sum": 5344.66528162788,
+                "mean": 1.7610099774721186,
+                "min": 0.2297069779888261,
+                "max": 2.3935756770079024
+              },
+              "within_memory_event_prefill_seconds": {
+                "count": 3035,
+                "sum": 1615.3929822017963,
+                "mean": 0.5322546893580877,
+                "min": 0.0,
+                "max": 7.970315749000292
+              },
+              "within_memory_kv_compression_seconds": {
+                "count": 3035,
+                "sum": 213.21079966660182,
+                "mean": 0.07025067534319665,
+                "min": 0.0,
+                "max": 1.7294316579354927
+              },
+              "within_memory_summary_append_seconds": {
+                "count": 3035,
+                "sum": 9489.506955937439,
+                "mean": 3.126690924526339,
+                "min": 0.0,
+                "max": 73.70111628100858
+              },
+              "within_memory_summary_rewrite_seconds": {
+                "count": 3035,
+                "sum": 272.4799094963528,
+                "mean": 0.08977921235464671,
+                "min": 0.0,
+                "max": 6.839849623036571
+              },
+              "within_memory_summary_seconds": {
+                "count": 3035,
+                "sum": 9761.986865433792,
+                "mean": 3.216470136880986,
+                "min": 0.0,
+                "max": 80.54096590404515
+              }
+            }
           },
           "phase_timing_unavailable_attempts": 0,
           "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
         },
         "gpu_peaks_bytes": {
-          "peak_gpu_allocated_bytes": null,
-          "peak_gpu_reserved_bytes": null,
-          "nvml_peak_process_gpu_bytes": null,
-          "nvml_peak_device_used_bytes": null
+          "peak_gpu_allocated_bytes": 19065275904,
+          "peak_gpu_reserved_bytes": 20042481664,
+          "nvml_peak_process_gpu_bytes": 20535312384,
+          "nvml_peak_device_used_bytes": 21221867520
         },
-        "micro_fixed_denominator": null,
-        "task_macro_fixed_denominator": null,
+        "micro_fixed_denominator": 0.544316309719934,
+        "task_macro_fixed_denominator": 0.5785138519347105,
         "by_task": {
           "EPM": {
             "expected": 297,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 297,
+            "successful": 297,
+            "correct": 179,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 297,
-            "unfinished": 297,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.6026936026936027,
+            "interim_accuracy_attempted": 0.6026936026936027,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 297,
+                "sum": 16503.20649405681,
+                "mean": 55.56635183184111,
+                "min": 0.9604707919934299,
+                "max": 333.8985389599984
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 297,
+                "sum": 16503.20649405681,
+                "mean": 55.56635183184111,
+                "min": 0.9604707919934299,
+                "max": 333.8985389599984
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 297,
+                    "sum": 8.040313682556153,
+                    "mean": 0.02707176324092981,
+                    "min": 0.025998367309570312,
+                    "max": 0.02876108741760254
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 297,
+                    "sum": 10.359955114364624,
+                    "mean": 0.03488200375206944,
+                    "min": 0.030661727905273436,
+                    "max": 0.04209356689453125
+                  },
+                  "answer_seconds": {
+                    "count": 297,
+                    "sum": 20.3003844829218,
+                    "mean": 0.06835146290546061,
+                    "min": 0.06379163899691775,
+                    "max": 0.07595896400744095
+                  },
+                  "cleanup_seconds": {
+                    "count": 297,
+                    "sum": 49.94772830200964,
+                    "mean": 0.1681741693670358,
+                    "min": 0.12285167799564078,
+                    "max": 0.1964042469917331
+                  },
+                  "e2e_seconds": {
+                    "count": 297,
+                    "sum": 16502.91556563035,
+                    "mean": 55.56537227484966,
+                    "min": 0.9591092810005648,
+                    "max": 333.89763626799686
+                  },
+                  "memory_manage_seconds": {
+                    "count": 297,
+                    "sum": 1707.5413046042813,
+                    "mean": 5.749297321899937,
+                    "min": 0.29282720798801165,
+                    "max": 64.71649541033548
+                  },
+                  "preprocess_seconds": {
+                    "count": 297,
+                    "sum": 1590.7432073969685,
+                    "mean": 5.356037735343328,
+                    "min": 0.06704607499705162,
+                    "max": 26.567118437000317
+                  },
+                  "video_decode_seconds": {
+                    "count": 297,
+                    "sum": 12357.704366904247,
+                    "mean": 41.608432211798814,
+                    "min": 0.3564277539990144,
+                    "max": 230.1070905230008
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 297,
+                    "sum": 16452.851147118185,
+                    "mean": 55.396805209152134,
+                    "min": 0.8315907810028875,
+                    "max": 333.7119748380064
+                  },
+                  "vision_encode_seconds": {
+                    "count": 297,
+                    "sum": 771.9316226234369,
+                    "mean": 2.5990963724694844,
+                    "min": 0.049074873997597024,
+                    "max": 13.681180235013016
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 297,
+                    "sum": 577.6578439438745,
+                    "mean": 1.944975905534931,
+                    "min": 0.23097496599075384,
+                    "max": 2.3413754570065066
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 297,
+                    "sum": 155.62138973301626,
+                    "mean": 0.523977743208809,
+                    "min": 0.0,
+                    "max": 4.81007887305168
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 297,
+                    "sum": 17.005308827836416,
+                    "mean": 0.05725693208025729,
+                    "min": 0.0,
+                    "max": 0.9256943429645617
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 297,
+                    "sum": 800.014404475005,
+                    "mean": 2.6936511935185354,
+                    "min": 0.0,
+                    "max": 52.6002322609711
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 297,
+                    "sum": 23.312325033955858,
+                    "mean": 0.07849267688200626,
+                    "min": 0.0,
+                    "max": 3.997182242994313
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 297,
+                    "sum": 823.3267295089609,
+                    "mean": 2.7721438704005417,
+                    "min": 0.0,
+                    "max": 54.70987956496538
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 297,
+                    "sum": 8.040313682556153,
+                    "mean": 0.02707176324092981,
+                    "min": 0.025998367309570312,
+                    "max": 0.02876108741760254
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 297,
+                    "sum": 10.359955114364624,
+                    "mean": 0.03488200375206944,
+                    "min": 0.030661727905273436,
+                    "max": 0.04209356689453125
+                  },
+                  "answer_seconds": {
+                    "count": 297,
+                    "sum": 20.3003844829218,
+                    "mean": 0.06835146290546061,
+                    "min": 0.06379163899691775,
+                    "max": 0.07595896400744095
+                  },
+                  "cleanup_seconds": {
+                    "count": 297,
+                    "sum": 49.94772830200964,
+                    "mean": 0.1681741693670358,
+                    "min": 0.12285167799564078,
+                    "max": 0.1964042469917331
+                  },
+                  "e2e_seconds": {
+                    "count": 297,
+                    "sum": 16502.91556563035,
+                    "mean": 55.56537227484966,
+                    "min": 0.9591092810005648,
+                    "max": 333.89763626799686
+                  },
+                  "memory_manage_seconds": {
+                    "count": 297,
+                    "sum": 1707.5413046042813,
+                    "mean": 5.749297321899937,
+                    "min": 0.29282720798801165,
+                    "max": 64.71649541033548
+                  },
+                  "preprocess_seconds": {
+                    "count": 297,
+                    "sum": 1590.7432073969685,
+                    "mean": 5.356037735343328,
+                    "min": 0.06704607499705162,
+                    "max": 26.567118437000317
+                  },
+                  "video_decode_seconds": {
+                    "count": 297,
+                    "sum": 12357.704366904247,
+                    "mean": 41.608432211798814,
+                    "min": 0.3564277539990144,
+                    "max": 230.1070905230008
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 297,
+                    "sum": 16452.851147118185,
+                    "mean": 55.396805209152134,
+                    "min": 0.8315907810028875,
+                    "max": 333.7119748380064
+                  },
+                  "vision_encode_seconds": {
+                    "count": 297,
+                    "sum": 771.9316226234369,
+                    "mean": 2.5990963724694844,
+                    "min": 0.049074873997597024,
+                    "max": 13.681180235013016
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 297,
+                    "sum": 577.6578439438745,
+                    "mean": 1.944975905534931,
+                    "min": 0.23097496599075384,
+                    "max": 2.3413754570065066
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 297,
+                    "sum": 155.62138973301626,
+                    "mean": 0.523977743208809,
+                    "min": 0.0,
+                    "max": 4.81007887305168
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 297,
+                    "sum": 17.005308827836416,
+                    "mean": 0.05725693208025729,
+                    "min": 0.0,
+                    "max": 0.9256943429645617
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 297,
+                    "sum": 800.014404475005,
+                    "mean": 2.6936511935185354,
+                    "min": 0.0,
+                    "max": 52.6002322609711
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 297,
+                    "sum": 23.312325033955858,
+                    "mean": 0.07849267688200626,
+                    "min": 0.0,
+                    "max": 3.997182242994313
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 297,
+                    "sum": 823.3267295089609,
+                    "mean": 2.7721438704005417,
+                    "min": 0.0,
+                    "max": 54.70987956496538
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19063762432,
+              "peak_gpu_reserved_bytes": 20042481664,
+              "nvml_peak_process_gpu_bytes": 20535312384,
+              "nvml_peak_device_used_bytes": 21221867520
             }
           },
           "ASI": {
             "expected": 148,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 148,
+            "successful": 148,
+            "correct": 93,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 148,
-            "unfinished": 148,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.6283783783783784,
+            "interim_accuracy_attempted": 0.6283783783783784,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 148,
+                "sum": 1913.7501371311373,
+                "mean": 12.930744169804981,
+                "min": 0.7205475969967665,
+                "max": 64.54678735400375
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 148,
+                "sum": 1913.7501371311373,
+                "mean": 12.930744169804981,
+                "min": 0.7205475969967665,
+                "max": 64.54678735400375
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 148,
+                    "sum": 4.345636985778809,
+                    "mean": 0.02936241206607303,
+                    "min": 0.026080255508422853,
+                    "max": 0.24014329719543456
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 148,
+                    "sum": 5.1389320316314695,
+                    "mean": 0.03472251372723966,
+                    "min": 0.02971216011047363,
+                    "max": 0.049547264099121094
+                  },
+                  "answer_seconds": {
+                    "count": 148,
+                    "sum": 10.47324334413861,
+                    "mean": 0.07076515773066627,
+                    "min": 0.06231908001063857,
+                    "max": 0.3003767099871766
+                  },
+                  "cleanup_seconds": {
+                    "count": 148,
+                    "sum": 25.230043641931843,
+                    "mean": 0.17047326785089084,
+                    "min": 0.13185722898924723,
+                    "max": 0.22314691801148
+                  },
+                  "e2e_seconds": {
+                    "count": 148,
+                    "sum": 1913.6044071160577,
+                    "mean": 12.92975950754093,
+                    "min": 0.7192072369944071,
+                    "max": 64.54571000899887
+                  },
+                  "memory_manage_seconds": {
+                    "count": 148,
+                    "sum": 479.8407207309647,
+                    "mean": 3.2421670319659777,
+                    "min": 0.26503017502545845,
+                    "max": 16.47187294383184
+                  },
+                  "preprocess_seconds": {
+                    "count": 148,
+                    "sum": 223.2031527920044,
+                    "mean": 1.5081294107567864,
+                    "min": 0.039451506003388204,
+                    "max": 7.5647162399982335
+                  },
+                  "video_decode_seconds": {
+                    "count": 148,
+                    "sum": 931.0365811759402,
+                    "mean": 6.290787710648245,
+                    "min": 0.04331837501376867,
+                    "max": 34.22435715200845
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 148,
+                    "sum": 1888.3157380431512,
+                    "mean": 12.758890121913185,
+                    "min": 0.5827230979921296,
+                    "max": 64.36443123400386
+                  },
+                  "vision_encode_seconds": {
+                    "count": 148,
+                    "sum": 242.7139454318094,
+                    "mean": 1.6399590907554689,
+                    "min": 0.047856471996055916,
+                    "max": 6.686176062023151
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 148,
+                    "sum": 240.62476908389363,
+                    "mean": 1.6258430343506327,
+                    "min": 0.23021189599239733,
+                    "max": 2.352669766987674
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 148,
+                    "sum": 43.770801698818104,
+                    "mean": 0.29574866012714934,
+                    "min": 0.0,
+                    "max": 1.8605800610093866
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 148,
+                    "sum": 4.08966634501121,
+                    "mean": 0.027632880709535203,
+                    "min": 0.0,
+                    "max": 0.24846251899725758
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 148,
+                    "sum": 146.90376156303682,
+                    "mean": 0.9925929835340326,
+                    "min": 0.0,
+                    "max": 10.89889302199299
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 148,
+                    "sum": 1.1993531960033579,
+                    "mean": 0.008103737810833499,
+                    "min": 0.0,
+                    "max": 0.8628449960087892
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 148,
+                    "sum": 148.10311475904018,
+                    "mean": 1.000696721344866,
+                    "min": 0.0,
+                    "max": 11.665694853960304
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 148,
+                    "sum": 4.345636985778809,
+                    "mean": 0.02936241206607303,
+                    "min": 0.026080255508422853,
+                    "max": 0.24014329719543456
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 148,
+                    "sum": 5.1389320316314695,
+                    "mean": 0.03472251372723966,
+                    "min": 0.02971216011047363,
+                    "max": 0.049547264099121094
+                  },
+                  "answer_seconds": {
+                    "count": 148,
+                    "sum": 10.47324334413861,
+                    "mean": 0.07076515773066627,
+                    "min": 0.06231908001063857,
+                    "max": 0.3003767099871766
+                  },
+                  "cleanup_seconds": {
+                    "count": 148,
+                    "sum": 25.230043641931843,
+                    "mean": 0.17047326785089084,
+                    "min": 0.13185722898924723,
+                    "max": 0.22314691801148
+                  },
+                  "e2e_seconds": {
+                    "count": 148,
+                    "sum": 1913.6044071160577,
+                    "mean": 12.92975950754093,
+                    "min": 0.7192072369944071,
+                    "max": 64.54571000899887
+                  },
+                  "memory_manage_seconds": {
+                    "count": 148,
+                    "sum": 479.8407207309647,
+                    "mean": 3.2421670319659777,
+                    "min": 0.26503017502545845,
+                    "max": 16.47187294383184
+                  },
+                  "preprocess_seconds": {
+                    "count": 148,
+                    "sum": 223.2031527920044,
+                    "mean": 1.5081294107567864,
+                    "min": 0.039451506003388204,
+                    "max": 7.5647162399982335
+                  },
+                  "video_decode_seconds": {
+                    "count": 148,
+                    "sum": 931.0365811759402,
+                    "mean": 6.290787710648245,
+                    "min": 0.04331837501376867,
+                    "max": 34.22435715200845
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 148,
+                    "sum": 1888.3157380431512,
+                    "mean": 12.758890121913185,
+                    "min": 0.5827230979921296,
+                    "max": 64.36443123400386
+                  },
+                  "vision_encode_seconds": {
+                    "count": 148,
+                    "sum": 242.7139454318094,
+                    "mean": 1.6399590907554689,
+                    "min": 0.047856471996055916,
+                    "max": 6.686176062023151
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 148,
+                    "sum": 240.62476908389363,
+                    "mean": 1.6258430343506327,
+                    "min": 0.23021189599239733,
+                    "max": 2.352669766987674
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 148,
+                    "sum": 43.770801698818104,
+                    "mean": 0.29574866012714934,
+                    "min": 0.0,
+                    "max": 1.8605800610093866
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 148,
+                    "sum": 4.08966634501121,
+                    "mean": 0.027632880709535203,
+                    "min": 0.0,
+                    "max": 0.24846251899725758
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 148,
+                    "sum": 146.90376156303682,
+                    "mean": 0.9925929835340326,
+                    "min": 0.0,
+                    "max": 10.89889302199299
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 148,
+                    "sum": 1.1993531960033579,
+                    "mean": 0.008103737810833499,
+                    "min": 0.0,
+                    "max": 0.8628449960087892
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 148,
+                    "sum": 148.10311475904018,
+                    "mean": 1.000696721344866,
+                    "min": 0.0,
+                    "max": 11.665694853960304
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19063898624,
+              "peak_gpu_reserved_bytes": 20040384512,
+              "nvml_peak_process_gpu_bytes": 20484980736,
+              "nvml_peak_device_used_bytes": 21171535872
             }
           },
           "HLD": {
             "expected": 186,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 186,
+            "successful": 186,
+            "correct": 57,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 186,
-            "unfinished": 186,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.3064516129032258,
+            "interim_accuracy_attempted": 0.3064516129032258,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 186,
+                "sum": 12094.448999863991,
+                "mean": 65.02391935410748,
+                "min": 0.8254692869959399,
+                "max": 431.505782163993
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 186,
+                "sum": 12094.448999863991,
+                "mean": 65.02391935410748,
+                "min": 0.8254692869959399,
+                "max": 431.505782163993
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 186,
+                    "sum": 5.148697729110718,
+                    "mean": 0.027681170586616764,
+                    "min": 0.026012479782104494,
+                    "max": 0.13608575820922852
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 186,
+                    "sum": 6.40169811630249,
+                    "mean": 0.0344177318080779,
+                    "min": 0.02995199966430664,
+                    "max": 0.037450878143310544
+                  },
+                  "answer_seconds": {
+                    "count": 186,
+                    "sum": 12.771249510260532,
+                    "mean": 0.06866263177559426,
+                    "min": 0.06251650900230743,
+                    "max": 0.1886107939935755
+                  },
+                  "cleanup_seconds": {
+                    "count": 186,
+                    "sum": 32.741408131973,
+                    "mean": 0.1760290759783495,
+                    "min": 0.13808220700593665,
+                    "max": 0.8598134749918245
+                  },
+                  "e2e_seconds": {
+                    "count": 186,
+                    "sum": 12094.269360472084,
+                    "mean": 65.02295355092518,
+                    "min": 0.8246539110259619,
+                    "max": 431.50479460999486
+                  },
+                  "memory_manage_seconds": {
+                    "count": 186,
+                    "sum": 1299.8657928906468,
+                    "mean": 6.988525768229284,
+                    "min": 0.3384423810057342,
+                    "max": 59.90601224580314
+                  },
+                  "preprocess_seconds": {
+                    "count": 186,
+                    "sum": 1060.3845525893266,
+                    "mean": 5.700992218222186,
+                    "min": 0.10052931300015189,
+                    "max": 31.948935117019573
+                  },
+                  "video_decode_seconds": {
+                    "count": 186,
+                    "sum": 9174.443993474968,
+                    "mean": 49.324967706854665,
+                    "min": 0.11668672997620888,
+                    "max": 335.90408278399264
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 186,
+                    "sum": 12061.453800851028,
+                    "mean": 64.84652581102704,
+                    "min": 0.6861704230250325,
+                    "max": 430.64399564501946
+                  },
+                  "vision_encode_seconds": {
+                    "count": 186,
+                    "sum": 510.43192907911725,
+                    "mean": 2.7442576832210603,
+                    "min": 0.06010869098827243,
+                    "max": 12.971809215014218
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 186,
+                    "sum": 320.6656332128914,
+                    "mean": 1.72400878071447,
+                    "min": 0.27954101900104433,
+                    "max": 2.3423664449946955
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 186,
+                    "sum": 124.21559510121006,
+                    "mean": 0.6678257801140326,
+                    "min": 0.0,
+                    "max": 4.54856943001505
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 186,
+                    "sum": 14.480936788575491,
+                    "mean": 0.07785449886330909,
+                    "min": 0.0,
+                    "max": 0.739810920014861
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 186,
+                    "sum": 732.8595078395447,
+                    "mean": 3.940104880857767,
+                    "min": 0.0,
+                    "max": 48.395809953071875
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 186,
+                    "sum": 18.771478353985003,
+                    "mean": 0.10092192663432797,
+                    "min": 0.0,
+                    "max": 2.1371359639742877
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 186,
+                    "sum": 751.6309861935297,
+                    "mean": 4.041026807492095,
+                    "min": 0.0,
+                    "max": 50.497933571081376
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 186,
+                    "sum": 5.148697729110718,
+                    "mean": 0.027681170586616764,
+                    "min": 0.026012479782104494,
+                    "max": 0.13608575820922852
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 186,
+                    "sum": 6.40169811630249,
+                    "mean": 0.0344177318080779,
+                    "min": 0.02995199966430664,
+                    "max": 0.037450878143310544
+                  },
+                  "answer_seconds": {
+                    "count": 186,
+                    "sum": 12.771249510260532,
+                    "mean": 0.06866263177559426,
+                    "min": 0.06251650900230743,
+                    "max": 0.1886107939935755
+                  },
+                  "cleanup_seconds": {
+                    "count": 186,
+                    "sum": 32.741408131973,
+                    "mean": 0.1760290759783495,
+                    "min": 0.13808220700593665,
+                    "max": 0.8598134749918245
+                  },
+                  "e2e_seconds": {
+                    "count": 186,
+                    "sum": 12094.269360472084,
+                    "mean": 65.02295355092518,
+                    "min": 0.8246539110259619,
+                    "max": 431.50479460999486
+                  },
+                  "memory_manage_seconds": {
+                    "count": 186,
+                    "sum": 1299.8657928906468,
+                    "mean": 6.988525768229284,
+                    "min": 0.3384423810057342,
+                    "max": 59.90601224580314
+                  },
+                  "preprocess_seconds": {
+                    "count": 186,
+                    "sum": 1060.3845525893266,
+                    "mean": 5.700992218222186,
+                    "min": 0.10052931300015189,
+                    "max": 31.948935117019573
+                  },
+                  "video_decode_seconds": {
+                    "count": 186,
+                    "sum": 9174.443993474968,
+                    "mean": 49.324967706854665,
+                    "min": 0.11668672997620888,
+                    "max": 335.90408278399264
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 186,
+                    "sum": 12061.453800851028,
+                    "mean": 64.84652581102704,
+                    "min": 0.6861704230250325,
+                    "max": 430.64399564501946
+                  },
+                  "vision_encode_seconds": {
+                    "count": 186,
+                    "sum": 510.43192907911725,
+                    "mean": 2.7442576832210603,
+                    "min": 0.06010869098827243,
+                    "max": 12.971809215014218
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 186,
+                    "sum": 320.6656332128914,
+                    "mean": 1.72400878071447,
+                    "min": 0.27954101900104433,
+                    "max": 2.3423664449946955
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 186,
+                    "sum": 124.21559510121006,
+                    "mean": 0.6678257801140326,
+                    "min": 0.0,
+                    "max": 4.54856943001505
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 186,
+                    "sum": 14.480936788575491,
+                    "mean": 0.07785449886330909,
+                    "min": 0.0,
+                    "max": 0.739810920014861
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 186,
+                    "sum": 732.8595078395447,
+                    "mean": 3.940104880857767,
+                    "min": 0.0,
+                    "max": 48.395809953071875
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 186,
+                    "sum": 18.771478353985003,
+                    "mean": 0.10092192663432797,
+                    "min": 0.0,
+                    "max": 2.1371359639742877
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 186,
+                    "sum": 751.6309861935297,
+                    "mean": 4.041026807492095,
+                    "min": 0.0,
+                    "max": 50.497933571081376
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19063463424,
+              "peak_gpu_reserved_bytes": 20042481664,
+              "nvml_peak_process_gpu_bytes": 20487077888,
+              "nvml_peak_device_used_bytes": 21173633024
             }
           },
           "STU": {
             "expected": 178,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 178,
+            "successful": 178,
+            "correct": 88,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 178,
-            "unfinished": 178,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.4943820224719101,
+            "interim_accuracy_attempted": 0.4943820224719101,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 178,
+                "sum": 6733.442986033013,
+                "mean": 37.828331382207935,
+                "min": 0.9910392150050029,
+                "max": 226.53431543099578
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 178,
+                "sum": 6733.442986033013,
+                "mean": 37.828331382207935,
+                "min": 0.9910392150050029,
+                "max": 226.53431543099578
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 178,
+                    "sum": 6.98399723815918,
+                    "mean": 0.03923593954022011,
+                    "min": 0.02611097526550293,
+                    "max": 0.4069652500152588
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 178,
+                    "sum": 6.518212175369262,
+                    "mean": 0.03661916952454642,
+                    "min": 0.029917184829711913,
+                    "max": 0.052770816802978515
+                  },
+                  "answer_seconds": {
+                    "count": 178,
+                    "sum": 14.910087358075543,
+                    "mean": 0.08376453571952552,
+                    "min": 0.06285311499959789,
+                    "max": 0.5075404020026326
+                  },
+                  "cleanup_seconds": {
+                    "count": 178,
+                    "sum": 33.03362227707112,
+                    "mean": 0.18558214762399505,
+                    "min": 0.12801352998940274,
+                    "max": 1.6720802609925158
+                  },
+                  "e2e_seconds": {
+                    "count": 178,
+                    "sum": 6733.263456777218,
+                    "mean": 37.82732279088325,
+                    "min": 0.9899468910007272,
+                    "max": 226.53319143500994
+                  },
+                  "memory_manage_seconds": {
+                    "count": 178,
+                    "sum": 1550.7146532082843,
+                    "mean": 8.711880074203844,
+                    "min": 0.34401792600692715,
+                    "max": 73.06568822971894
+                  },
+                  "preprocess_seconds": {
+                    "count": 178,
+                    "sum": 684.0573011571978,
+                    "mean": 3.843018545826954,
+                    "min": 0.05643739599327091,
+                    "max": 25.08875108594657
+                  },
+                  "video_decode_seconds": {
+                    "count": 178,
+                    "sum": 3852.4087715580827,
+                    "mean": 21.642745907629678,
+                    "min": 0.33585420199960936,
+                    "max": 137.42773957099416
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 178,
+                    "sum": 6700.157711300984,
+                    "mean": 37.6413354567471,
+                    "min": 0.8613588440057356,
+                    "max": 224.85927812801674
+                  },
+                  "vision_encode_seconds": {
+                    "count": 178,
+                    "sum": 593.7126863309823,
+                    "mean": 3.3354645299493386,
+                    "min": 0.06007609200605657,
+                    "max": 16.883267634970252
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 178,
+                    "sum": 332.9623347328452,
+                    "mean": 1.8705749142294674,
+                    "min": 0.280204185997718,
+                    "max": 2.320104113983689
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 178,
+                    "sum": 150.13552266416082,
+                    "mean": 0.8434579924952855,
+                    "min": 0.0,
+                    "max": 5.675192464987049
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 178,
+                    "sum": 20.16613539494574,
+                    "mean": 0.11329289547722327,
+                    "min": 0.0,
+                    "max": 1.0553544860740658
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 178,
+                    "sum": 916.6000719707954,
+                    "mean": 5.149438606577502,
+                    "min": 0.0,
+                    "max": 58.3514128231036
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 178,
+                    "sum": 28.570666761064786,
+                    "mean": 0.16050936382620665,
+                    "min": 0.0,
+                    "max": 3.298084385023685
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 178,
+                    "sum": 945.1707387318602,
+                    "mean": 5.309947970403709,
+                    "min": 0.0,
+                    "max": 61.649497208127286
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 178,
+                    "sum": 6.98399723815918,
+                    "mean": 0.03923593954022011,
+                    "min": 0.02611097526550293,
+                    "max": 0.4069652500152588
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 178,
+                    "sum": 6.518212175369262,
+                    "mean": 0.03661916952454642,
+                    "min": 0.029917184829711913,
+                    "max": 0.052770816802978515
+                  },
+                  "answer_seconds": {
+                    "count": 178,
+                    "sum": 14.910087358075543,
+                    "mean": 0.08376453571952552,
+                    "min": 0.06285311499959789,
+                    "max": 0.5075404020026326
+                  },
+                  "cleanup_seconds": {
+                    "count": 178,
+                    "sum": 33.03362227707112,
+                    "mean": 0.18558214762399505,
+                    "min": 0.12801352998940274,
+                    "max": 1.6720802609925158
+                  },
+                  "e2e_seconds": {
+                    "count": 178,
+                    "sum": 6733.263456777218,
+                    "mean": 37.82732279088325,
+                    "min": 0.9899468910007272,
+                    "max": 226.53319143500994
+                  },
+                  "memory_manage_seconds": {
+                    "count": 178,
+                    "sum": 1550.7146532082843,
+                    "mean": 8.711880074203844,
+                    "min": 0.34401792600692715,
+                    "max": 73.06568822971894
+                  },
+                  "preprocess_seconds": {
+                    "count": 178,
+                    "sum": 684.0573011571978,
+                    "mean": 3.843018545826954,
+                    "min": 0.05643739599327091,
+                    "max": 25.08875108594657
+                  },
+                  "video_decode_seconds": {
+                    "count": 178,
+                    "sum": 3852.4087715580827,
+                    "mean": 21.642745907629678,
+                    "min": 0.33585420199960936,
+                    "max": 137.42773957099416
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 178,
+                    "sum": 6700.157711300984,
+                    "mean": 37.6413354567471,
+                    "min": 0.8613588440057356,
+                    "max": 224.85927812801674
+                  },
+                  "vision_encode_seconds": {
+                    "count": 178,
+                    "sum": 593.7126863309823,
+                    "mean": 3.3354645299493386,
+                    "min": 0.06007609200605657,
+                    "max": 16.883267634970252
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 178,
+                    "sum": 332.9623347328452,
+                    "mean": 1.8705749142294674,
+                    "min": 0.280204185997718,
+                    "max": 2.320104113983689
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 178,
+                    "sum": 150.13552266416082,
+                    "mean": 0.8434579924952855,
+                    "min": 0.0,
+                    "max": 5.675192464987049
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 178,
+                    "sum": 20.16613539494574,
+                    "mean": 0.11329289547722327,
+                    "min": 0.0,
+                    "max": 1.0553544860740658
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 178,
+                    "sum": 916.6000719707954,
+                    "mean": 5.149438606577502,
+                    "min": 0.0,
+                    "max": 58.3514128231036
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 178,
+                    "sum": 28.570666761064786,
+                    "mean": 0.16050936382620665,
+                    "min": 0.0,
+                    "max": 3.298084385023685
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 178,
+                    "sum": 945.1707387318602,
+                    "mean": 5.309947970403709,
+                    "min": 0.0,
+                    "max": 61.649497208127286
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19064556032,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20487077888,
+              "nvml_peak_device_used_bytes": 21173633024
             }
           },
           "OJR": {
             "expected": 184,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 184,
+            "successful": 184,
+            "correct": 120,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 184,
-            "unfinished": 184,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.6521739130434783,
+            "interim_accuracy_attempted": 0.6521739130434783,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 184,
+                "sum": 7355.240148373006,
+                "mean": 39.97413124115764,
+                "min": 0.9553384860046208,
+                "max": 228.958818382991
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 184,
+                "sum": 7355.240148373006,
+                "mean": 39.97413124115764,
+                "min": 0.9553384860046208,
+                "max": 228.958818382991
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 184,
+                    "sum": 5.493323770523071,
+                    "mean": 0.029855020491973215,
+                    "min": 0.02608233642578125,
+                    "max": 0.40566608047485353
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 184,
+                    "sum": 6.453483295440674,
+                    "mean": 0.03507327877956888,
+                    "min": 0.029839359283447265,
+                    "max": 0.04789350509643555
+                  },
+                  "answer_seconds": {
+                    "count": 184,
+                    "sum": 13.181525247186073,
+                    "mean": 0.07163872416948953,
+                    "min": 0.0626113619946409,
+                    "max": 0.5012711909948848
+                  },
+                  "cleanup_seconds": {
+                    "count": 184,
+                    "sum": 32.84704211106873,
+                    "mean": 0.17851653321233005,
+                    "min": 0.13096487800066825,
+                    "max": 0.21640870301052928
+                  },
+                  "e2e_seconds": {
+                    "count": 184,
+                    "sum": 7355.066157269219,
+                    "mean": 39.97318563733271,
+                    "min": 0.9544670229952317,
+                    "max": 228.9575853960123
+                  },
+                  "memory_manage_seconds": {
+                    "count": 184,
+                    "sum": 1696.5108930575516,
+                    "mean": 9.22016789705191,
+                    "min": 0.3351354990154505,
+                    "max": 93.25933322904166
+                  },
+                  "preprocess_seconds": {
+                    "count": 184,
+                    "sum": 695.3176615832635,
+                    "mean": 3.7789003346916497,
+                    "min": 0.04913155300891958,
+                    "max": 18.969933727028547
+                  },
+                  "video_decode_seconds": {
+                    "count": 184,
+                    "sum": 4289.31935063425,
+                    "mean": 23.311518209968753,
+                    "min": 0.20796617500309367,
+                    "max": 134.68820467800833
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 184,
+                    "sum": 7322.146493039007,
+                    "mean": 39.79427441869025,
+                    "min": 0.8070747050078353,
+                    "max": 228.74078590399586
+                  },
+                  "vision_encode_seconds": {
+                    "count": 184,
+                    "sum": 625.4975249846757,
+                    "mean": 3.3994430705688896,
+                    "min": 0.06226654999773018,
+                    "max": 18.048616803978803
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 184,
+                    "sum": 355.035027124919,
+                    "mean": 1.929538190896299,
+                    "min": 0.28706458999658935,
+                    "max": 2.346612052002456
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 184,
+                    "sum": 152.49691158151836,
+                    "mean": 0.8287875629430346,
+                    "min": 0.0,
+                    "max": 6.258583597140387
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 184,
+                    "sum": 19.66646980168298,
+                    "mean": 0.10688298805262489,
+                    "min": 0.0,
+                    "max": 1.2755940078932326
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 184,
+                    "sum": 1027.8036879463616,
+                    "mean": 5.585889608404139,
+                    "min": 0.0,
+                    "max": 73.70111628100858
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 184,
+                    "sum": 33.78691102107405,
+                    "mean": 0.1836245164188807,
+                    "min": 0.0,
+                    "max": 6.839849623036571
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 184,
+                    "sum": 1061.5905989674357,
+                    "mean": 5.7695141248230195,
+                    "min": 0.0,
+                    "max": 80.54096590404515
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 184,
+                    "sum": 5.493323770523071,
+                    "mean": 0.029855020491973215,
+                    "min": 0.02608233642578125,
+                    "max": 0.40566608047485353
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 184,
+                    "sum": 6.453483295440674,
+                    "mean": 0.03507327877956888,
+                    "min": 0.029839359283447265,
+                    "max": 0.04789350509643555
+                  },
+                  "answer_seconds": {
+                    "count": 184,
+                    "sum": 13.181525247186073,
+                    "mean": 0.07163872416948953,
+                    "min": 0.0626113619946409,
+                    "max": 0.5012711909948848
+                  },
+                  "cleanup_seconds": {
+                    "count": 184,
+                    "sum": 32.84704211106873,
+                    "mean": 0.17851653321233005,
+                    "min": 0.13096487800066825,
+                    "max": 0.21640870301052928
+                  },
+                  "e2e_seconds": {
+                    "count": 184,
+                    "sum": 7355.066157269219,
+                    "mean": 39.97318563733271,
+                    "min": 0.9544670229952317,
+                    "max": 228.9575853960123
+                  },
+                  "memory_manage_seconds": {
+                    "count": 184,
+                    "sum": 1696.5108930575516,
+                    "mean": 9.22016789705191,
+                    "min": 0.3351354990154505,
+                    "max": 93.25933322904166
+                  },
+                  "preprocess_seconds": {
+                    "count": 184,
+                    "sum": 695.3176615832635,
+                    "mean": 3.7789003346916497,
+                    "min": 0.04913155300891958,
+                    "max": 18.969933727028547
+                  },
+                  "video_decode_seconds": {
+                    "count": 184,
+                    "sum": 4289.31935063425,
+                    "mean": 23.311518209968753,
+                    "min": 0.20796617500309367,
+                    "max": 134.68820467800833
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 184,
+                    "sum": 7322.146493039007,
+                    "mean": 39.79427441869025,
+                    "min": 0.8070747050078353,
+                    "max": 228.74078590399586
+                  },
+                  "vision_encode_seconds": {
+                    "count": 184,
+                    "sum": 625.4975249846757,
+                    "mean": 3.3994430705688896,
+                    "min": 0.06226654999773018,
+                    "max": 18.048616803978803
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 184,
+                    "sum": 355.035027124919,
+                    "mean": 1.929538190896299,
+                    "min": 0.28706458999658935,
+                    "max": 2.346612052002456
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 184,
+                    "sum": 152.49691158151836,
+                    "mean": 0.8287875629430346,
+                    "min": 0.0,
+                    "max": 6.258583597140387
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 184,
+                    "sum": 19.66646980168298,
+                    "mean": 0.10688298805262489,
+                    "min": 0.0,
+                    "max": 1.2755940078932326
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 184,
+                    "sum": 1027.8036879463616,
+                    "mean": 5.585889608404139,
+                    "min": 0.0,
+                    "max": 73.70111628100858
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 184,
+                    "sum": 33.78691102107405,
+                    "mean": 0.1836245164188807,
+                    "min": 0.0,
+                    "max": 6.839849623036571
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 184,
+                    "sum": 1061.5905989674357,
+                    "mean": 5.7695141248230195,
+                    "min": 0.0,
+                    "max": 80.54096590404515
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19063992832,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20487077888,
+              "nvml_peak_device_used_bytes": 21173633024
             }
           },
           "ATR": {
             "expected": 116,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 116,
+            "successful": 116,
+            "correct": 84,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 116,
-            "unfinished": 116,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.7241379310344828,
+            "interim_accuracy_attempted": 0.7241379310344828,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 116,
+                "sum": 4403.343730201057,
+                "mean": 37.95985974311256,
+                "min": 0.7271837589796633,
+                "max": 192.70427866399405
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 116,
+                "sum": 4403.343730201057,
+                "mean": 37.95985974311256,
+                "min": 0.7271837589796633,
+                "max": 192.70427866399405
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 116,
+                    "sum": 3.1680914363861086,
+                    "mean": 0.02731113307229404,
+                    "min": 0.026038272857666016,
+                    "max": 0.05395686531066895
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 116,
+                    "sum": 4.090899477005005,
+                    "mean": 0.03526637480176728,
+                    "min": 0.029888511657714844,
+                    "max": 0.04347903823852539
+                  },
+                  "answer_seconds": {
+                    "count": 116,
+                    "sum": 8.003615711117163,
+                    "mean": 0.06899668716480313,
+                    "min": 0.06266624800628051,
+                    "max": 0.09849332802696154
+                  },
+                  "cleanup_seconds": {
+                    "count": 116,
+                    "sum": 20.803672693189583,
+                    "mean": 0.17934200597577227,
+                    "min": 0.14473643302335404,
+                    "max": 0.22003690699057188
+                  },
+                  "e2e_seconds": {
+                    "count": 116,
+                    "sum": 4403.234235263939,
+                    "mean": 37.95891582124085,
+                    "min": 0.7263614410185255,
+                    "max": 192.70326173398644
+                  },
+                  "memory_manage_seconds": {
+                    "count": 116,
+                    "sum": 986.433461619512,
+                    "mean": 8.50373673809924,
+                    "min": 0.26552509202156216,
+                    "max": 79.66119954796159
+                  },
+                  "preprocess_seconds": {
+                    "count": 116,
+                    "sum": 437.6534961498983,
+                    "mean": 3.772874966809468,
+                    "min": 0.04507295800431166,
+                    "max": 15.879459873016458
+                  },
+                  "video_decode_seconds": {
+                    "count": 116,
+                    "sum": 2548.3478261290584,
+                    "mean": 21.96851574249188,
+                    "min": 0.1539976130006835,
+                    "max": 122.10549438500311
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 116,
+                    "sum": 4382.3853695359285,
+                    "mean": 37.77918422013732,
+                    "min": 0.5812352510110941,
+                    "max": 192.50026258299476
+                  },
+                  "vision_encode_seconds": {
+                    "count": 116,
+                    "sum": 400.5709549147141,
+                    "mean": 3.4531978871958113,
+                    "min": 0.047751225996762514,
+                    "max": 19.363231231021928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 116,
+                    "sum": 221.02476463798666,
+                    "mean": 1.905385902051609,
+                    "min": 0.22989770598360337,
+                    "max": 2.327237846009666
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 116,
+                    "sum": 98.19726850866573,
+                    "mean": 0.8465281767988425,
+                    "min": 0.0,
+                    "max": 6.528759289853042
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 116,
+                    "sum": 12.749739332328318,
+                    "mean": 0.10991154596834757,
+                    "min": 0.0,
+                    "max": 1.295679607981583
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 116,
+                    "sum": 570.588443771805,
+                    "mean": 4.918865894584526,
+                    "min": 0.0,
+                    "max": 62.549987701990176
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 116,
+                    "sum": 15.30931490304647,
+                    "mean": 0.13197685261246958,
+                    "min": 0.0,
+                    "max": 3.8738268290180713
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 116,
+                    "sum": 585.8977586748515,
+                    "mean": 5.050842747196996,
+                    "min": 0.0,
+                    "max": 66.42381453100825
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 116,
+                    "sum": 3.1680914363861086,
+                    "mean": 0.02731113307229404,
+                    "min": 0.026038272857666016,
+                    "max": 0.05395686531066895
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 116,
+                    "sum": 4.090899477005005,
+                    "mean": 0.03526637480176728,
+                    "min": 0.029888511657714844,
+                    "max": 0.04347903823852539
+                  },
+                  "answer_seconds": {
+                    "count": 116,
+                    "sum": 8.003615711117163,
+                    "mean": 0.06899668716480313,
+                    "min": 0.06266624800628051,
+                    "max": 0.09849332802696154
+                  },
+                  "cleanup_seconds": {
+                    "count": 116,
+                    "sum": 20.803672693189583,
+                    "mean": 0.17934200597577227,
+                    "min": 0.14473643302335404,
+                    "max": 0.22003690699057188
+                  },
+                  "e2e_seconds": {
+                    "count": 116,
+                    "sum": 4403.234235263939,
+                    "mean": 37.95891582124085,
+                    "min": 0.7263614410185255,
+                    "max": 192.70326173398644
+                  },
+                  "memory_manage_seconds": {
+                    "count": 116,
+                    "sum": 986.433461619512,
+                    "mean": 8.50373673809924,
+                    "min": 0.26552509202156216,
+                    "max": 79.66119954796159
+                  },
+                  "preprocess_seconds": {
+                    "count": 116,
+                    "sum": 437.6534961498983,
+                    "mean": 3.772874966809468,
+                    "min": 0.04507295800431166,
+                    "max": 15.879459873016458
+                  },
+                  "video_decode_seconds": {
+                    "count": 116,
+                    "sum": 2548.3478261290584,
+                    "mean": 21.96851574249188,
+                    "min": 0.1539976130006835,
+                    "max": 122.10549438500311
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 116,
+                    "sum": 4382.3853695359285,
+                    "mean": 37.77918422013732,
+                    "min": 0.5812352510110941,
+                    "max": 192.50026258299476
+                  },
+                  "vision_encode_seconds": {
+                    "count": 116,
+                    "sum": 400.5709549147141,
+                    "mean": 3.4531978871958113,
+                    "min": 0.047751225996762514,
+                    "max": 19.363231231021928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 116,
+                    "sum": 221.02476463798666,
+                    "mean": 1.905385902051609,
+                    "min": 0.22989770598360337,
+                    "max": 2.327237846009666
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 116,
+                    "sum": 98.19726850866573,
+                    "mean": 0.8465281767988425,
+                    "min": 0.0,
+                    "max": 6.528759289853042
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 116,
+                    "sum": 12.749739332328318,
+                    "mean": 0.10991154596834757,
+                    "min": 0.0,
+                    "max": 1.295679607981583
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 116,
+                    "sum": 570.588443771805,
+                    "mean": 4.918865894584526,
+                    "min": 0.0,
+                    "max": 62.549987701990176
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 116,
+                    "sum": 15.30931490304647,
+                    "mean": 0.13197685261246958,
+                    "min": 0.0,
+                    "max": 3.8738268290180713
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 116,
+                    "sum": 585.8977586748515,
+                    "mean": 5.050842747196996,
+                    "min": 0.0,
+                    "max": 66.42381453100825
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19064613376,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20531118080,
+              "nvml_peak_device_used_bytes": 21217673216
             }
           },
           "ACR": {
             "expected": 109,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 109,
+            "successful": 109,
+            "correct": 57,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 109,
-            "unfinished": 109,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.5229357798165137,
+            "interim_accuracy_attempted": 0.5229357798165137,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 109,
+                "sum": 3032.8955012098886,
+                "mean": 27.824729368898062,
+                "min": 0.8166437240142841,
+                "max": 131.9675035670225
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 109,
+                "sum": 3032.8955012098886,
+                "mean": 27.824729368898062,
+                "min": 0.8166437240142841,
+                "max": 131.9675035670225
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 109,
+                    "sum": 3.000615324020386,
+                    "mean": 0.027528580954315467,
+                    "min": 0.02605241584777832,
+                    "max": 0.05432035064697266
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 109,
+                    "sum": 3.7216468868255617,
+                    "mean": 0.034143549420417994,
+                    "min": 0.029998079299926757,
+                    "max": 0.0436192626953125
+                  },
+                  "answer_seconds": {
+                    "count": 109,
+                    "sum": 7.427353010963998,
+                    "mean": 0.0681408533115963,
+                    "min": 0.06259791798947845,
+                    "max": 0.09745624198694713
+                  },
+                  "cleanup_seconds": {
+                    "count": 109,
+                    "sum": 19.62610777914233,
+                    "mean": 0.18005603467103054,
+                    "min": 0.13058552501024678,
+                    "max": 0.23487924800429028
+                  },
+                  "e2e_seconds": {
+                    "count": 109,
+                    "sum": 3032.7921181410493,
+                    "mean": 27.823780900376597,
+                    "min": 0.815848598984303,
+                    "max": 131.96670392900705
+                  },
+                  "memory_manage_seconds": {
+                    "count": 109,
+                    "sum": 506.29944796497875,
+                    "mean": 4.6449490638988875,
+                    "min": 0.2909503660048358,
+                    "max": 36.09252685320098
+                  },
+                  "preprocess_seconds": {
+                    "count": 109,
+                    "sum": 314.1704861491453,
+                    "mean": 2.882298038065553,
+                    "min": 0.044846831005997956,
+                    "max": 14.861658354988322
+                  },
+                  "video_decode_seconds": {
+                    "count": 109,
+                    "sum": 1937.15090141799,
+                    "mean": 17.77202661851367,
+                    "min": 0.23186106400680728,
+                    "max": 73.8582429419912
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 109,
+                    "sum": 3013.1236843870574,
+                    "mean": 27.6433365540097,
+                    "min": 0.6848889960092492,
+                    "max": 131.76291878600023
+                  },
+                  "vision_encode_seconds": {
+                    "count": 109,
+                    "sum": 246.97678804182215,
+                    "mean": 2.2658420921268085,
+                    "min": 0.047885098989354447,
+                    "max": 13.038375972988433
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 109,
+                    "sum": 205.05291634799505,
+                    "mean": 1.8812194160366518,
+                    "min": 0.23091279398067854,
+                    "max": 2.3935756770079024
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 109,
+                    "sum": 45.37875945016276,
+                    "mean": 0.41631889403819045,
+                    "min": 0.0,
+                    "max": 4.325309385021683
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 109,
+                    "sum": 4.953872921207221,
+                    "mean": 0.04544837542391946,
+                    "min": 0.0,
+                    "max": 0.7339609789778478
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 109,
+                    "sum": 208.06014547910308,
+                    "mean": 1.9088086741202117,
+                    "min": 0.0,
+                    "max": 27.097516187961446
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 109,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 109,
+                    "sum": 208.06014547910308,
+                    "mean": 1.9088086741202117,
+                    "min": 0.0,
+                    "max": 27.097516187961446
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 109,
+                    "sum": 3.000615324020386,
+                    "mean": 0.027528580954315467,
+                    "min": 0.02605241584777832,
+                    "max": 0.05432035064697266
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 109,
+                    "sum": 3.7216468868255617,
+                    "mean": 0.034143549420417994,
+                    "min": 0.029998079299926757,
+                    "max": 0.0436192626953125
+                  },
+                  "answer_seconds": {
+                    "count": 109,
+                    "sum": 7.427353010963998,
+                    "mean": 0.0681408533115963,
+                    "min": 0.06259791798947845,
+                    "max": 0.09745624198694713
+                  },
+                  "cleanup_seconds": {
+                    "count": 109,
+                    "sum": 19.62610777914233,
+                    "mean": 0.18005603467103054,
+                    "min": 0.13058552501024678,
+                    "max": 0.23487924800429028
+                  },
+                  "e2e_seconds": {
+                    "count": 109,
+                    "sum": 3032.7921181410493,
+                    "mean": 27.823780900376597,
+                    "min": 0.815848598984303,
+                    "max": 131.96670392900705
+                  },
+                  "memory_manage_seconds": {
+                    "count": 109,
+                    "sum": 506.29944796497875,
+                    "mean": 4.6449490638988875,
+                    "min": 0.2909503660048358,
+                    "max": 36.09252685320098
+                  },
+                  "preprocess_seconds": {
+                    "count": 109,
+                    "sum": 314.1704861491453,
+                    "mean": 2.882298038065553,
+                    "min": 0.044846831005997956,
+                    "max": 14.861658354988322
+                  },
+                  "video_decode_seconds": {
+                    "count": 109,
+                    "sum": 1937.15090141799,
+                    "mean": 17.77202661851367,
+                    "min": 0.23186106400680728,
+                    "max": 73.8582429419912
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 109,
+                    "sum": 3013.1236843870574,
+                    "mean": 27.6433365540097,
+                    "min": 0.6848889960092492,
+                    "max": 131.76291878600023
+                  },
+                  "vision_encode_seconds": {
+                    "count": 109,
+                    "sum": 246.97678804182215,
+                    "mean": 2.2658420921268085,
+                    "min": 0.047885098989354447,
+                    "max": 13.038375972988433
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 109,
+                    "sum": 205.05291634799505,
+                    "mean": 1.8812194160366518,
+                    "min": 0.23091279398067854,
+                    "max": 2.3935756770079024
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 109,
+                    "sum": 45.37875945016276,
+                    "mean": 0.41631889403819045,
+                    "min": 0.0,
+                    "max": 4.325309385021683
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 109,
+                    "sum": 4.953872921207221,
+                    "mean": 0.04544837542391946,
+                    "min": 0.0,
+                    "max": 0.7339609789778478
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 109,
+                    "sum": 208.06014547910308,
+                    "mean": 1.9088086741202117,
+                    "min": 0.0,
+                    "max": 27.097516187961446
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 109,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 109,
+                    "sum": 208.06014547910308,
+                    "mean": 1.9088086741202117,
+                    "min": 0.0,
+                    "max": 27.097516187961446
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19062946816,
+              "peak_gpu_reserved_bytes": 19992150016,
+              "nvml_peak_process_gpu_bytes": 20484980736,
+              "nvml_peak_device_used_bytes": 21171535872
             }
           },
           "OCR": {
             "expected": 149,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 149,
+            "successful": 149,
+            "correct": 114,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 149,
-            "unfinished": 149,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.7651006711409396,
+            "interim_accuracy_attempted": 0.7651006711409396,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 149,
+                "sum": 4106.614104933906,
+                "mean": 27.5611684894893,
+                "min": 1.849785594997229,
+                "max": 157.9952284750034
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 149,
+                "sum": 4106.614104933906,
+                "mean": 27.5611684894893,
+                "min": 1.849785594997229,
+                "max": 157.9952284750034
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 149,
+                    "sum": 5.181761184692383,
+                    "mean": 0.03477692070263344,
+                    "min": 0.026021888732910156,
+                    "max": 0.40454358863830564
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 149,
+                    "sum": 5.2541288604736325,
+                    "mean": 0.03526260980183646,
+                    "min": 0.03038003158569336,
+                    "max": 0.05708083343505859
+                  },
+                  "answer_seconds": {
+                    "count": 149,
+                    "sum": 11.518533480979386,
+                    "mean": 0.07730559383207641,
+                    "min": 0.06339123900397681,
+                    "max": 0.5045367309940048
+                  },
+                  "cleanup_seconds": {
+                    "count": 149,
+                    "sum": 27.1614762750105,
+                    "mean": 0.1822917870806074,
+                    "min": 0.1528003019921016,
+                    "max": 0.2154425590124447
+                  },
+                  "e2e_seconds": {
+                    "count": 149,
+                    "sum": 4106.4736723020615,
+                    "mean": 27.56022598860444,
+                    "min": 1.8486727080016863,
+                    "max": 157.99400577200868
+                  },
+                  "memory_manage_seconds": {
+                    "count": 149,
+                    "sum": 814.7384581659717,
+                    "mean": 5.468043343395783,
+                    "min": 0.6802174450422172,
+                    "max": 32.599067036266206
+                  },
+                  "preprocess_seconds": {
+                    "count": 149,
+                    "sum": 434.6607735923608,
+                    "mean": 2.91718639994873,
+                    "min": 0.13486646200180985,
+                    "max": 12.759297107026214
+                  },
+                  "video_decode_seconds": {
+                    "count": 149,
+                    "sum": 2432.707220337732,
+                    "mean": 16.32689409622639,
+                    "min": 0.575564022990875,
+                    "max": 103.79683701999602
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 149,
+                    "sum": 4079.253632658845,
+                    "mean": 27.377541158784197,
+                    "min": 1.689538752019871,
+                    "max": 157.80150363700523
+                  },
+                  "vision_encode_seconds": {
+                    "count": 149,
+                    "sum": 384.2082816635666,
+                    "mean": 2.578579071567561,
+                    "min": 0.138097780989483,
+                    "max": 11.121197326981928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 149,
+                    "sum": 282.25726392888464,
+                    "mean": 1.8943440532139908,
+                    "min": 0.6341279599873815,
+                    "max": 2.312379328010138
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 149,
+                    "sum": 82.47168674896238,
+                    "mean": 0.5535012533487408,
+                    "min": 0.0,
+                    "max": 3.751681666064542
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 149,
+                    "sum": 9.27420204221562,
+                    "mean": 0.06224296672627933,
+                    "min": 0.0,
+                    "max": 0.5763116670714226
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 149,
+                    "sum": 365.3241463667655,
+                    "mean": 2.451839908501782,
+                    "min": 0.0,
+                    "max": 23.614177173934877
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 149,
+                    "sum": 9.263780941982986,
+                    "mean": 0.06217302645626165,
+                    "min": 0.0,
+                    "max": 1.8492902619764209
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 149,
+                    "sum": 374.5879273087485,
+                    "mean": 2.5140129349580436,
+                    "min": 0.0,
+                    "max": 24.99174193199724
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 149,
+                    "sum": 5.181761184692383,
+                    "mean": 0.03477692070263344,
+                    "min": 0.026021888732910156,
+                    "max": 0.40454358863830564
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 149,
+                    "sum": 5.2541288604736325,
+                    "mean": 0.03526260980183646,
+                    "min": 0.03038003158569336,
+                    "max": 0.05708083343505859
+                  },
+                  "answer_seconds": {
+                    "count": 149,
+                    "sum": 11.518533480979386,
+                    "mean": 0.07730559383207641,
+                    "min": 0.06339123900397681,
+                    "max": 0.5045367309940048
+                  },
+                  "cleanup_seconds": {
+                    "count": 149,
+                    "sum": 27.1614762750105,
+                    "mean": 0.1822917870806074,
+                    "min": 0.1528003019921016,
+                    "max": 0.2154425590124447
+                  },
+                  "e2e_seconds": {
+                    "count": 149,
+                    "sum": 4106.4736723020615,
+                    "mean": 27.56022598860444,
+                    "min": 1.8486727080016863,
+                    "max": 157.99400577200868
+                  },
+                  "memory_manage_seconds": {
+                    "count": 149,
+                    "sum": 814.7384581659717,
+                    "mean": 5.468043343395783,
+                    "min": 0.6802174450422172,
+                    "max": 32.599067036266206
+                  },
+                  "preprocess_seconds": {
+                    "count": 149,
+                    "sum": 434.6607735923608,
+                    "mean": 2.91718639994873,
+                    "min": 0.13486646200180985,
+                    "max": 12.759297107026214
+                  },
+                  "video_decode_seconds": {
+                    "count": 149,
+                    "sum": 2432.707220337732,
+                    "mean": 16.32689409622639,
+                    "min": 0.575564022990875,
+                    "max": 103.79683701999602
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 149,
+                    "sum": 4079.253632658845,
+                    "mean": 27.377541158784197,
+                    "min": 1.689538752019871,
+                    "max": 157.80150363700523
+                  },
+                  "vision_encode_seconds": {
+                    "count": 149,
+                    "sum": 384.2082816635666,
+                    "mean": 2.578579071567561,
+                    "min": 0.138097780989483,
+                    "max": 11.121197326981928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 149,
+                    "sum": 282.25726392888464,
+                    "mean": 1.8943440532139908,
+                    "min": 0.6341279599873815,
+                    "max": 2.312379328010138
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 149,
+                    "sum": 82.47168674896238,
+                    "mean": 0.5535012533487408,
+                    "min": 0.0,
+                    "max": 3.751681666064542
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 149,
+                    "sum": 9.27420204221562,
+                    "mean": 0.06224296672627933,
+                    "min": 0.0,
+                    "max": 0.5763116670714226
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 149,
+                    "sum": 365.3241463667655,
+                    "mean": 2.451839908501782,
+                    "min": 0.0,
+                    "max": 23.614177173934877
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 149,
+                    "sum": 9.263780941982986,
+                    "mean": 0.06217302645626165,
+                    "min": 0.0,
+                    "max": 1.8492902619764209
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 149,
+                    "sum": 374.5879273087485,
+                    "mean": 2.5140129349580436,
+                    "min": 0.0,
+                    "max": 24.99174193199724
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19062886912,
+              "peak_gpu_reserved_bytes": 20036190208,
+              "nvml_peak_process_gpu_bytes": 20529020928,
+              "nvml_peak_device_used_bytes": 21215576064
             }
           },
           "FPD": {
             "expected": 101,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 101,
+            "successful": 101,
+            "correct": 67,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 101,
-            "unfinished": 101,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.6633663366336634,
+            "interim_accuracy_attempted": 0.6633663366336634,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 101,
+                "sum": 3719.695495887965,
+                "mean": 36.828668276118464,
+                "min": 0.8196457610174548,
+                "max": 202.9645336889953
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 101,
+                "sum": 3719.695495887965,
+                "mean": 36.828668276118464,
+                "min": 0.8196457610174548,
+                "max": 202.9645336889953
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 101,
+                    "sum": 2.7279222431182863,
+                    "mean": 0.027009131119983033,
+                    "min": 0.026358783721923826,
+                    "max": 0.028088479995727538
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 101,
+                    "sum": 3.629234619140625,
+                    "mean": 0.0359330160310953,
+                    "min": 0.030126079559326172,
+                    "max": 0.07547494506835938
+                  },
+                  "answer_seconds": {
+                    "count": 101,
+                    "sum": 7.006776291964343,
+                    "mean": 0.06937402269271627,
+                    "min": 0.06316609999339562,
+                    "max": 0.10884299001190811
+                  },
+                  "cleanup_seconds": {
+                    "count": 101,
+                    "sum": 17.696596395981032,
+                    "mean": 0.1752138257027825,
+                    "min": 0.14691976399626583,
+                    "max": 0.20837049299734645
+                  },
+                  "e2e_seconds": {
+                    "count": 101,
+                    "sum": 3719.5993020370806,
+                    "mean": 36.827715861753276,
+                    "min": 0.8187890679982956,
+                    "max": 202.96367509200354
+                  },
+                  "memory_manage_seconds": {
+                    "count": 101,
+                    "sum": 308.4159389553097,
+                    "mean": 3.0536231579733633,
+                    "min": 0.28936033896752633,
+                    "max": 8.054447637972771
+                  },
+                  "preprocess_seconds": {
+                    "count": 101,
+                    "sum": 321.24748385697603,
+                    "mean": 3.180668156999763,
+                    "min": 0.06700560200260952,
+                    "max": 12.12843757099472
+                  },
+                  "video_decode_seconds": {
+                    "count": 101,
+                    "sum": 2895.451262145056,
+                    "mean": 28.667834278663918,
+                    "min": 0.197008098999504,
+                    "max": 181.01857874100097
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 101,
+                    "sum": 3701.863468040072,
+                    "mean": 36.652113544951206,
+                    "min": 0.6714749670063611,
+                    "max": 202.77635668299627
+                  },
+                  "vision_encode_seconds": {
+                    "count": 101,
+                    "sum": 168.63656831317348,
+                    "mean": 1.6696689931997375,
+                    "min": 0.0478325069998391,
+                    "max": 3.477753898012452
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 101,
+                    "sum": 188.30897617799928,
+                    "mean": 1.8644453086930621,
+                    "min": 0.2297069779888261,
+                    "max": 2.296588088007411
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 101,
+                    "sum": 23.776028727865196,
+                    "mean": 0.23540622502836828,
+                    "min": 0.0,
+                    "max": 1.0725690239924006
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 101,
+                    "sum": 1.7262988809525268,
+                    "mean": 0.01709206812824284,
+                    "min": 0.0,
+                    "max": 0.11722149400156923
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 101,
+                    "sum": 64.647931726955,
+                    "mean": 0.6400785319500495,
+                    "min": 0.0,
+                    "max": 4.327531452960102
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 101,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 101,
+                    "sum": 64.647931726955,
+                    "mean": 0.6400785319500495,
+                    "min": 0.0,
+                    "max": 4.327531452960102
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 101,
+                    "sum": 2.7279222431182863,
+                    "mean": 0.027009131119983033,
+                    "min": 0.026358783721923826,
+                    "max": 0.028088479995727538
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 101,
+                    "sum": 3.629234619140625,
+                    "mean": 0.0359330160310953,
+                    "min": 0.030126079559326172,
+                    "max": 0.07547494506835938
+                  },
+                  "answer_seconds": {
+                    "count": 101,
+                    "sum": 7.006776291964343,
+                    "mean": 0.06937402269271627,
+                    "min": 0.06316609999339562,
+                    "max": 0.10884299001190811
+                  },
+                  "cleanup_seconds": {
+                    "count": 101,
+                    "sum": 17.696596395981032,
+                    "mean": 0.1752138257027825,
+                    "min": 0.14691976399626583,
+                    "max": 0.20837049299734645
+                  },
+                  "e2e_seconds": {
+                    "count": 101,
+                    "sum": 3719.5993020370806,
+                    "mean": 36.827715861753276,
+                    "min": 0.8187890679982956,
+                    "max": 202.96367509200354
+                  },
+                  "memory_manage_seconds": {
+                    "count": 101,
+                    "sum": 308.4159389553097,
+                    "mean": 3.0536231579733633,
+                    "min": 0.28936033896752633,
+                    "max": 8.054447637972771
+                  },
+                  "preprocess_seconds": {
+                    "count": 101,
+                    "sum": 321.24748385697603,
+                    "mean": 3.180668156999763,
+                    "min": 0.06700560200260952,
+                    "max": 12.12843757099472
+                  },
+                  "video_decode_seconds": {
+                    "count": 101,
+                    "sum": 2895.451262145056,
+                    "mean": 28.667834278663918,
+                    "min": 0.197008098999504,
+                    "max": 181.01857874100097
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 101,
+                    "sum": 3701.863468040072,
+                    "mean": 36.652113544951206,
+                    "min": 0.6714749670063611,
+                    "max": 202.77635668299627
+                  },
+                  "vision_encode_seconds": {
+                    "count": 101,
+                    "sum": 168.63656831317348,
+                    "mean": 1.6696689931997375,
+                    "min": 0.0478325069998391,
+                    "max": 3.477753898012452
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 101,
+                    "sum": 188.30897617799928,
+                    "mean": 1.8644453086930621,
+                    "min": 0.2297069779888261,
+                    "max": 2.296588088007411
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 101,
+                    "sum": 23.776028727865196,
+                    "mean": 0.23540622502836828,
+                    "min": 0.0,
+                    "max": 1.0725690239924006
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 101,
+                    "sum": 1.7262988809525268,
+                    "mean": 0.01709206812824284,
+                    "min": 0.0,
+                    "max": 0.11722149400156923
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 101,
+                    "sum": 64.647931726955,
+                    "mean": 0.6400785319500495,
+                    "min": 0.0,
+                    "max": 4.327531452960102
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 101,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 101,
+                    "sum": 64.647931726955,
+                    "mean": 0.6400785319500495,
+                    "min": 0.0,
+                    "max": 4.327531452960102
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19008112128,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20484980736,
+              "nvml_peak_device_used_bytes": 21171535872
             }
           },
           "REC": {
             "expected": 698,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 698,
+            "successful": 698,
+            "correct": 215,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 698,
-            "unfinished": 698,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.30802292263610315,
+            "interim_accuracy_attempted": 0.30802292263610315,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 698,
+                "sum": 3035.0212506267417,
+                "mean": 4.348167980840604,
+                "min": 0.6853636539890431,
+                "max": 17.192423973989207
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 698,
+                "sum": 3035.0212506267417,
+                "mean": 4.348167980840604,
+                "min": 0.6853636539890431,
+                "max": 17.192423973989207
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 698,
+                    "sum": 25.62651644706726,
+                    "mean": 0.036714206944222436,
+                    "min": 0.02594713592529297,
+                    "max": 0.08134131240844726
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 698,
+                    "sum": 31.93618630218506,
+                    "mean": 0.0457538485704657,
+                    "min": 0.04239155197143555,
+                    "max": 0.0506163215637207
+                  },
+                  "answer_seconds": {
+                    "count": 698,
+                    "sum": 62.777116845041746,
+                    "mean": 0.08993856281524605,
+                    "min": 0.07473597399075516,
+                    "max": 0.14280134602449834
+                  },
+                  "cleanup_seconds": {
+                    "count": 698,
+                    "sum": 135.3549318992009,
+                    "mean": 0.19391824054326776,
+                    "min": 0.1510018359986134,
+                    "max": 0.2503288669977337
+                  },
+                  "e2e_seconds": {
+                    "count": 698,
+                    "sum": 3034.4050725943234,
+                    "mean": 4.347285204289862,
+                    "min": 0.684558199980529,
+                    "max": 17.191585146007128
+                  },
+                  "memory_manage_seconds": {
+                    "count": 698,
+                    "sum": 1218.3877385720552,
+                    "mean": 1.7455411727393342,
+                    "min": 0.2646202500036452,
+                    "max": 7.96840421424713
+                  },
+                  "preprocess_seconds": {
+                    "count": 698,
+                    "sum": 317.09946199069964,
+                    "mean": 0.4542972234823777,
+                    "min": 0.019246734998887405,
+                    "max": 2.2305920110084116
+                  },
+                  "video_decode_seconds": {
+                    "count": 698,
+                    "sum": 785.0387668020267,
+                    "mean": 1.124697373641872,
+                    "min": 0.03447763601434417,
+                    "max": 6.874652316007996
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 698,
+                    "sum": 2898.774317367177,
+                    "mean": 4.1529718013856405,
+                    "min": 0.5054329699778464,
+                    "max": 16.965762995998375
+                  },
+                  "vision_encode_seconds": {
+                    "count": 698,
+                    "sum": 513.1771500982577,
+                    "mean": 0.7352108167596815,
+                    "min": 0.04784599400591105,
+                    "max": 4.03719677097979
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 698,
+                    "sum": 990.2313562905765,
+                    "mean": 1.4186695648862129,
+                    "min": 0.22997161600505933,
+                    "max": 2.3014764499966986
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 698,
+                    "sum": 34.391304504912114,
+                    "mean": 0.049271209892424235,
+                    "min": 0.0,
+                    "max": 1.0839264299429487
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 698,
+                    "sum": 1.7335178430366796,
+                    "mean": 0.0024835499183906585,
+                    "min": 0.0,
+                    "max": 0.11930652600130998
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 698,
+                    "sum": 85.99486102309311,
+                    "mean": 0.12320180662334256,
+                    "min": 0.0,
+                    "max": 4.135051846969873
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 698,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 698,
+                    "sum": 85.99486102309311,
+                    "mean": 0.12320180662334256,
+                    "min": 0.0,
+                    "max": 4.135051846969873
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 698,
+                    "sum": 25.62651644706726,
+                    "mean": 0.036714206944222436,
+                    "min": 0.02594713592529297,
+                    "max": 0.08134131240844726
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 698,
+                    "sum": 31.93618630218506,
+                    "mean": 0.0457538485704657,
+                    "min": 0.04239155197143555,
+                    "max": 0.0506163215637207
+                  },
+                  "answer_seconds": {
+                    "count": 698,
+                    "sum": 62.777116845041746,
+                    "mean": 0.08993856281524605,
+                    "min": 0.07473597399075516,
+                    "max": 0.14280134602449834
+                  },
+                  "cleanup_seconds": {
+                    "count": 698,
+                    "sum": 135.3549318992009,
+                    "mean": 0.19391824054326776,
+                    "min": 0.1510018359986134,
+                    "max": 0.2503288669977337
+                  },
+                  "e2e_seconds": {
+                    "count": 698,
+                    "sum": 3034.4050725943234,
+                    "mean": 4.347285204289862,
+                    "min": 0.684558199980529,
+                    "max": 17.191585146007128
+                  },
+                  "memory_manage_seconds": {
+                    "count": 698,
+                    "sum": 1218.3877385720552,
+                    "mean": 1.7455411727393342,
+                    "min": 0.2646202500036452,
+                    "max": 7.96840421424713
+                  },
+                  "preprocess_seconds": {
+                    "count": 698,
+                    "sum": 317.09946199069964,
+                    "mean": 0.4542972234823777,
+                    "min": 0.019246734998887405,
+                    "max": 2.2305920110084116
+                  },
+                  "video_decode_seconds": {
+                    "count": 698,
+                    "sum": 785.0387668020267,
+                    "mean": 1.124697373641872,
+                    "min": 0.03447763601434417,
+                    "max": 6.874652316007996
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 698,
+                    "sum": 2898.774317367177,
+                    "mean": 4.1529718013856405,
+                    "min": 0.5054329699778464,
+                    "max": 16.965762995998375
+                  },
+                  "vision_encode_seconds": {
+                    "count": 698,
+                    "sum": 513.1771500982577,
+                    "mean": 0.7352108167596815,
+                    "min": 0.04784599400591105,
+                    "max": 4.03719677097979
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 698,
+                    "sum": 990.2313562905765,
+                    "mean": 1.4186695648862129,
+                    "min": 0.22997161600505933,
+                    "max": 2.3014764499966986
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 698,
+                    "sum": 34.391304504912114,
+                    "mean": 0.049271209892424235,
+                    "min": 0.0,
+                    "max": 1.0839264299429487
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 698,
+                    "sum": 1.7335178430366796,
+                    "mean": 0.0024835499183906585,
+                    "min": 0.0,
+                    "max": 0.11930652600130998
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 698,
+                    "sum": 85.99486102309311,
+                    "mean": 0.12320180662334256,
+                    "min": 0.0,
+                    "max": 4.135051846969873
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 698,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 698,
+                    "sum": 85.99486102309311,
+                    "mean": 0.12320180662334256,
+                    "min": 0.0,
+                    "max": 4.135051846969873
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 18955345408,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20531118080,
+              "nvml_peak_device_used_bytes": 21217673216
             }
           },
           "SSR": {
             "expected": 629,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 629,
+            "successful": 629,
+            "correct": 440,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 629,
-            "unfinished": 629,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.699523052464229,
+            "interim_accuracy_attempted": 0.699523052464229,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 629,
+                "sum": 8295.3882550743,
+                "mean": 13.188216621739747,
+                "min": 0.7800840220006648,
+                "max": 61.80764393901336
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 629,
+                "sum": 8295.3882550743,
+                "mean": 13.188216621739747,
+                "min": 0.7800840220006648,
+                "max": 61.80764393901336
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 629,
+                    "sum": 16.937847967147828,
+                    "mean": 0.02692821616398701,
+                    "min": 0.026049440383911132,
+                    "max": 0.029255680084228516
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 629,
+                    "sum": 20.98377345275879,
+                    "mean": 0.033360530131572,
+                    "min": 0.029870080947875976,
+                    "max": 0.04379443359375
+                  },
+                  "answer_seconds": {
+                    "count": 629,
+                    "sum": 41.98410931942635,
+                    "mean": 0.06674739160481137,
+                    "min": 0.06261398602509871,
+                    "max": 0.07756686399807222
+                  },
+                  "cleanup_seconds": {
+                    "count": 629,
+                    "sum": 118.88079129569815,
+                    "mean": 0.18899966819665842,
+                    "min": 0.15007911599241197,
+                    "max": 0.23848113001440652
+                  },
+                  "e2e_seconds": {
+                    "count": 629,
+                    "sum": 8294.89700119209,
+                    "mean": 13.187435613977886,
+                    "min": 0.7793772050063126,
+                    "max": 61.806958447006764
+                  },
+                  "memory_manage_seconds": {
+                    "count": 629,
+                    "sum": 1514.966188946535,
+                    "mean": 2.408531301981773,
+                    "min": 0.2932680569938384,
+                    "max": 11.87541809398681
+                  },
+                  "preprocess_seconds": {
+                    "count": 629,
+                    "sum": 889.8953003050119,
+                    "mean": 1.4147779019157583,
+                    "min": 0.0392580000043381,
+                    "max": 7.08725880595739
+                  },
+                  "video_decode_seconds": {
+                    "count": 629,
+                    "sum": 4920.857061813062,
+                    "mean": 7.823302165044613,
+                    "min": 0.17559457899187692,
+                    "max": 37.279658701998414
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 629,
+                    "sum": 8175.767094905983,
+                    "mean": 12.998039896511896,
+                    "min": 0.620621537003899,
+                    "max": 61.58569704400725
+                  },
+                  "vision_encode_seconds": {
+                    "count": 629,
+                    "sum": 804.7367119446862,
+                    "mean": 1.2793906390217586,
+                    "min": 0.04788509398349561,
+                    "max": 6.11879678798141
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 629,
+                    "sum": 1136.4208702261385,
+                    "mean": 1.806710445510554,
+                    "min": 0.23006749400519766,
+                    "max": 2.3472507469996344
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 629,
+                    "sum": 70.99657049073721,
+                    "mean": 0.11287213114584613,
+                    "min": 0.0,
+                    "max": 1.9372166519751772
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 629,
+                    "sum": 4.958358223258983,
+                    "mean": 0.007882922453511897,
+                    "min": 0.0,
+                    "max": 0.275538967049215
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 629,
+                    "sum": 160.7236233407457,
+                    "mean": 0.25552245364188503,
+                    "min": 0.0,
+                    "max": 6.611370045982767
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 629,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 629,
+                    "sum": 160.7236233407457,
+                    "mean": 0.25552245364188503,
+                    "min": 0.0,
+                    "max": 6.611370045982767
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 629,
+                    "sum": 16.937847967147828,
+                    "mean": 0.02692821616398701,
+                    "min": 0.026049440383911132,
+                    "max": 0.029255680084228516
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 629,
+                    "sum": 20.98377345275879,
+                    "mean": 0.033360530131572,
+                    "min": 0.029870080947875976,
+                    "max": 0.04379443359375
+                  },
+                  "answer_seconds": {
+                    "count": 629,
+                    "sum": 41.98410931942635,
+                    "mean": 0.06674739160481137,
+                    "min": 0.06261398602509871,
+                    "max": 0.07756686399807222
+                  },
+                  "cleanup_seconds": {
+                    "count": 629,
+                    "sum": 118.88079129569815,
+                    "mean": 0.18899966819665842,
+                    "min": 0.15007911599241197,
+                    "max": 0.23848113001440652
+                  },
+                  "e2e_seconds": {
+                    "count": 629,
+                    "sum": 8294.89700119209,
+                    "mean": 13.187435613977886,
+                    "min": 0.7793772050063126,
+                    "max": 61.806958447006764
+                  },
+                  "memory_manage_seconds": {
+                    "count": 629,
+                    "sum": 1514.966188946535,
+                    "mean": 2.408531301981773,
+                    "min": 0.2932680569938384,
+                    "max": 11.87541809398681
+                  },
+                  "preprocess_seconds": {
+                    "count": 629,
+                    "sum": 889.8953003050119,
+                    "mean": 1.4147779019157583,
+                    "min": 0.0392580000043381,
+                    "max": 7.08725880595739
+                  },
+                  "video_decode_seconds": {
+                    "count": 629,
+                    "sum": 4920.857061813062,
+                    "mean": 7.823302165044613,
+                    "min": 0.17559457899187692,
+                    "max": 37.279658701998414
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 629,
+                    "sum": 8175.767094905983,
+                    "mean": 12.998039896511896,
+                    "min": 0.620621537003899,
+                    "max": 61.58569704400725
+                  },
+                  "vision_encode_seconds": {
+                    "count": 629,
+                    "sum": 804.7367119446862,
+                    "mean": 1.2793906390217586,
+                    "min": 0.04788509398349561,
+                    "max": 6.11879678798141
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 629,
+                    "sum": 1136.4208702261385,
+                    "mean": 1.806710445510554,
+                    "min": 0.23006749400519766,
+                    "max": 2.3472507469996344
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 629,
+                    "sum": 70.99657049073721,
+                    "mean": 0.11287213114584613,
+                    "min": 0.0,
+                    "max": 1.9372166519751772
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 629,
+                    "sum": 4.958358223258983,
+                    "mean": 0.007882922453511897,
+                    "min": 0.0,
+                    "max": 0.275538967049215
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 629,
+                    "sum": 160.7236233407457,
+                    "mean": 0.25552245364188503,
+                    "min": 0.0,
+                    "max": 6.611370045982767
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 629,
+                    "sum": 0.0,
+                    "mean": 0.0,
+                    "min": 0.0,
+                    "max": 0.0
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 629,
+                    "sum": 160.7236233407457,
+                    "mean": 0.25552245364188503,
+                    "min": 0.0,
+                    "max": 6.611370045982767
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19062335488,
+              "peak_gpu_reserved_bytes": 19992150016,
+              "nvml_peak_process_gpu_bytes": 20484980736,
+              "nvml_peak_device_used_bytes": 21171535872
             }
           },
           "CRR": {
             "expected": 240,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 240,
+            "successful": 240,
+            "correct": 138,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 240,
-            "unfinished": 240,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.575,
+            "interim_accuracy_attempted": 0.575,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 240,
+                "sum": 11146.205480278732,
+                "mean": 46.44252283449472,
+                "min": 2.6001176970021334,
+                "max": 122.4816834369849
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 240,
+                "sum": 11146.205480278732,
+                "mean": 46.44252283449472,
+                "min": 2.6001176970021334,
+                "max": 122.4816834369849
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 240,
+                    "sum": 6.56843890953064,
+                    "mean": 0.027368495456377664,
+                    "min": 0.026524671554565428,
+                    "max": 0.05419411277770996
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 240,
+                    "sum": 10.591876308441162,
+                    "mean": 0.044132817951838176,
+                    "min": 0.03926835250854492,
+                    "max": 0.05003878402709961
+                  },
+                  "answer_seconds": {
+                    "count": 240,
+                    "sum": 18.700156072853133,
+                    "mean": 0.07791731697022139,
+                    "min": 0.07228391501121223,
+                    "max": 0.10766646297997795
+                  },
+                  "cleanup_seconds": {
+                    "count": 240,
+                    "sum": 48.8635210149223,
+                    "mean": 0.20359800422884292,
+                    "min": 0.16200560401193798,
+                    "max": 0.256469729996752
+                  },
+                  "e2e_seconds": {
+                    "count": 240,
+                    "sum": 11146.013247637224,
+                    "mean": 46.441721865155095,
+                    "min": 2.59938351000892,
+                    "max": 122.48099760198966
+                  },
+                  "memory_manage_seconds": {
+                    "count": 240,
+                    "sum": 6130.141905728349,
+                    "mean": 25.54225794053479,
+                    "min": 1.4803171740204562,
+                    "max": 71.35484455290134
+                  },
+                  "preprocess_seconds": {
+                    "count": 240,
+                    "sum": 1251.4767560161126,
+                    "mean": 5.214486483400469,
+                    "min": 0.15366636298131198,
+                    "max": 12.92773466106155
+                  },
+                  "video_decode_seconds": {
+                    "count": 240,
+                    "sum": 1615.4487695599382,
+                    "mean": 6.731036539833076,
+                    "min": 0.3227733390231151,
+                    "max": 18.412068865000037
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 240,
+                    "sum": 11097.055384233128,
+                    "mean": 46.237730767638034,
+                    "min": 2.4118075419974048,
+                    "max": 122.2857924689888
+                  },
+                  "vision_encode_seconds": {
+                    "count": 240,
+                    "sum": 2078.554243738239,
+                    "mean": 8.660642682242663,
+                    "min": 0.3281015389948152,
+                    "max": 20.524725225986913
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 240,
+                    "sum": 494.42352591987583,
+                    "mean": 2.060098024666149,
+                    "min": 1.3779372819990385,
+                    "max": 2.330550807004329
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 240,
+                    "sum": 633.9411429917673,
+                    "mean": 2.6414214291323637,
+                    "min": 0.0,
+                    "max": 7.970315749000292
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 240,
+                    "sum": 102.40629326555063,
+                    "mean": 0.426692888606461,
+                    "min": 0.0,
+                    "max": 1.7294316579354927
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 240,
+                    "sum": 4409.986370434228,
+                    "mean": 18.374943210142614,
+                    "min": 0.0,
+                    "max": 55.582726384018315
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 240,
+                    "sum": 142.26607928524027,
+                    "mean": 0.5927753303551678,
+                    "min": 0.0,
+                    "max": 4.03328206500737
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 240,
+                    "sum": 4552.252449719468,
+                    "mean": 18.967718540497785,
+                    "min": 0.0,
+                    "max": 59.54227445810102
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 240,
+                    "sum": 6.56843890953064,
+                    "mean": 0.027368495456377664,
+                    "min": 0.026524671554565428,
+                    "max": 0.05419411277770996
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 240,
+                    "sum": 10.591876308441162,
+                    "mean": 0.044132817951838176,
+                    "min": 0.03926835250854492,
+                    "max": 0.05003878402709961
+                  },
+                  "answer_seconds": {
+                    "count": 240,
+                    "sum": 18.700156072853133,
+                    "mean": 0.07791731697022139,
+                    "min": 0.07228391501121223,
+                    "max": 0.10766646297997795
+                  },
+                  "cleanup_seconds": {
+                    "count": 240,
+                    "sum": 48.8635210149223,
+                    "mean": 0.20359800422884292,
+                    "min": 0.16200560401193798,
+                    "max": 0.256469729996752
+                  },
+                  "e2e_seconds": {
+                    "count": 240,
+                    "sum": 11146.013247637224,
+                    "mean": 46.441721865155095,
+                    "min": 2.59938351000892,
+                    "max": 122.48099760198966
+                  },
+                  "memory_manage_seconds": {
+                    "count": 240,
+                    "sum": 6130.141905728349,
+                    "mean": 25.54225794053479,
+                    "min": 1.4803171740204562,
+                    "max": 71.35484455290134
+                  },
+                  "preprocess_seconds": {
+                    "count": 240,
+                    "sum": 1251.4767560161126,
+                    "mean": 5.214486483400469,
+                    "min": 0.15366636298131198,
+                    "max": 12.92773466106155
+                  },
+                  "video_decode_seconds": {
+                    "count": 240,
+                    "sum": 1615.4487695599382,
+                    "mean": 6.731036539833076,
+                    "min": 0.3227733390231151,
+                    "max": 18.412068865000037
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 240,
+                    "sum": 11097.055384233128,
+                    "mean": 46.237730767638034,
+                    "min": 2.4118075419974048,
+                    "max": 122.2857924689888
+                  },
+                  "vision_encode_seconds": {
+                    "count": 240,
+                    "sum": 2078.554243738239,
+                    "mean": 8.660642682242663,
+                    "min": 0.3281015389948152,
+                    "max": 20.524725225986913
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 240,
+                    "sum": 494.42352591987583,
+                    "mean": 2.060098024666149,
+                    "min": 1.3779372819990385,
+                    "max": 2.330550807004329
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 240,
+                    "sum": 633.9411429917673,
+                    "mean": 2.6414214291323637,
+                    "min": 0.0,
+                    "max": 7.970315749000292
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 240,
+                    "sum": 102.40629326555063,
+                    "mean": 0.426692888606461,
+                    "min": 0.0,
+                    "max": 1.7294316579354927
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 240,
+                    "sum": 4409.986370434228,
+                    "mean": 18.374943210142614,
+                    "min": 0.0,
+                    "max": 55.582726384018315
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 240,
+                    "sum": 142.26607928524027,
+                    "mean": 0.5927753303551678,
+                    "min": 0.0,
+                    "max": 4.03328206500737
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 240,
+                    "sum": 4552.252449719468,
+                    "mean": 18.967718540497785,
+                    "min": 0.0,
+                    "max": 59.54227445810102
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19065275904,
+              "peak_gpu_reserved_bytes": 19994247168,
+              "nvml_peak_process_gpu_bytes": 20487077888,
+              "nvml_peak_device_used_bytes": 21173633024
             }
           }
         },
         "by_group": {
           "回溯": {
             "expected": 631,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 631,
+            "successful": 631,
+            "correct": 329,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 631,
-            "unfinished": 631,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.5213946117274167,
+            "interim_accuracy_attempted": 0.5213946117274167,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 631,
+                "sum": 30511.405631051937,
+                "mean": 48.35405012844998,
+                "min": 0.7205475969967665,
+                "max": 431.505782163993
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 631,
+                "sum": 30511.405631051937,
+                "mean": 48.35405012844998,
+                "min": 0.7205475969967665,
+                "max": 431.505782163993
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 631,
+                    "sum": 17.53464839744568,
+                    "mean": 0.027788666240009,
+                    "min": 0.025998367309570312,
+                    "max": 0.24014329719543456
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 631,
+                    "sum": 21.900585262298584,
+                    "mean": 0.03470774209556036,
+                    "min": 0.02971216011047363,
+                    "max": 0.049547264099121094
+                  },
+                  "answer_seconds": {
+                    "count": 631,
+                    "sum": 43.54487733732094,
+                    "mean": 0.0690093143222202,
+                    "min": 0.06231908001063857,
+                    "max": 0.3003767099871766
+                  },
+                  "cleanup_seconds": {
+                    "count": 631,
+                    "sum": 107.91918007591448,
+                    "mean": 0.1710288115307678,
+                    "min": 0.12285167799564078,
+                    "max": 0.8598134749918245
+                  },
+                  "e2e_seconds": {
+                    "count": 631,
+                    "sum": 30510.78933321849,
+                    "mean": 48.353073428238496,
+                    "min": 0.7192072369944071,
+                    "max": 431.50479460999486
+                  },
+                  "memory_manage_seconds": {
+                    "count": 631,
+                    "sum": 3487.247818225893,
+                    "mean": 5.526541708757358,
+                    "min": 0.26503017502545845,
+                    "max": 64.71649541033548
+                  },
+                  "preprocess_seconds": {
+                    "count": 631,
+                    "sum": 2874.3309127782995,
+                    "mean": 4.555199544815054,
+                    "min": 0.039451506003388204,
+                    "max": 31.948935117019573
+                  },
+                  "video_decode_seconds": {
+                    "count": 631,
+                    "sum": 22463.184941555155,
+                    "mean": 35.59934222116507,
+                    "min": 0.04331837501376867,
+                    "max": 335.90408278399264
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 631,
+                    "sum": 30402.620686012364,
+                    "mean": 48.18164926467887,
+                    "min": 0.5827230979921296,
+                    "max": 430.64399564501946
+                  },
+                  "vision_encode_seconds": {
+                    "count": 631,
+                    "sum": 1525.0774971343635,
+                    "mean": 2.416921548548912,
+                    "min": 0.047856471996055916,
+                    "max": 13.681180235013016
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 631,
+                    "sum": 1138.9482462406595,
+                    "mean": 1.8049892967363859,
+                    "min": 0.23021189599239733,
+                    "max": 2.352669766987674
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 631,
+                    "sum": 323.6077865330444,
+                    "mean": 0.512849107025427,
+                    "min": 0.0,
+                    "max": 4.81007887305168
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 631,
+                    "sum": 35.57591196142312,
+                    "mean": 0.056380209130623006,
+                    "min": 0.0,
+                    "max": 0.9256943429645617
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 631,
+                    "sum": 1679.7776738775865,
+                    "mean": 2.6620882311847645,
+                    "min": 0.0,
+                    "max": 52.6002322609711
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 631,
+                    "sum": 43.28315658394422,
+                    "mean": 0.06859454292225708,
+                    "min": 0.0,
+                    "max": 3.997182242994313
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 631,
+                    "sum": 1723.0608304615307,
+                    "mean": 2.730682774107022,
+                    "min": 0.0,
+                    "max": 54.70987956496538
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 631,
+                    "sum": 17.53464839744568,
+                    "mean": 0.027788666240009,
+                    "min": 0.025998367309570312,
+                    "max": 0.24014329719543456
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 631,
+                    "sum": 21.900585262298584,
+                    "mean": 0.03470774209556036,
+                    "min": 0.02971216011047363,
+                    "max": 0.049547264099121094
+                  },
+                  "answer_seconds": {
+                    "count": 631,
+                    "sum": 43.54487733732094,
+                    "mean": 0.0690093143222202,
+                    "min": 0.06231908001063857,
+                    "max": 0.3003767099871766
+                  },
+                  "cleanup_seconds": {
+                    "count": 631,
+                    "sum": 107.91918007591448,
+                    "mean": 0.1710288115307678,
+                    "min": 0.12285167799564078,
+                    "max": 0.8598134749918245
+                  },
+                  "e2e_seconds": {
+                    "count": 631,
+                    "sum": 30510.78933321849,
+                    "mean": 48.353073428238496,
+                    "min": 0.7192072369944071,
+                    "max": 431.50479460999486
+                  },
+                  "memory_manage_seconds": {
+                    "count": 631,
+                    "sum": 3487.247818225893,
+                    "mean": 5.526541708757358,
+                    "min": 0.26503017502545845,
+                    "max": 64.71649541033548
+                  },
+                  "preprocess_seconds": {
+                    "count": 631,
+                    "sum": 2874.3309127782995,
+                    "mean": 4.555199544815054,
+                    "min": 0.039451506003388204,
+                    "max": 31.948935117019573
+                  },
+                  "video_decode_seconds": {
+                    "count": 631,
+                    "sum": 22463.184941555155,
+                    "mean": 35.59934222116507,
+                    "min": 0.04331837501376867,
+                    "max": 335.90408278399264
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 631,
+                    "sum": 30402.620686012364,
+                    "mean": 48.18164926467887,
+                    "min": 0.5827230979921296,
+                    "max": 430.64399564501946
+                  },
+                  "vision_encode_seconds": {
+                    "count": 631,
+                    "sum": 1525.0774971343635,
+                    "mean": 2.416921548548912,
+                    "min": 0.047856471996055916,
+                    "max": 13.681180235013016
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 631,
+                    "sum": 1138.9482462406595,
+                    "mean": 1.8049892967363859,
+                    "min": 0.23021189599239733,
+                    "max": 2.352669766987674
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 631,
+                    "sum": 323.6077865330444,
+                    "mean": 0.512849107025427,
+                    "min": 0.0,
+                    "max": 4.81007887305168
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 631,
+                    "sum": 35.57591196142312,
+                    "mean": 0.056380209130623006,
+                    "min": 0.0,
+                    "max": 0.9256943429645617
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 631,
+                    "sum": 1679.7776738775865,
+                    "mean": 2.6620882311847645,
+                    "min": 0.0,
+                    "max": 52.6002322609711
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 631,
+                    "sum": 43.28315658394422,
+                    "mean": 0.06859454292225708,
+                    "min": 0.0,
+                    "max": 3.997182242994313
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 631,
+                    "sum": 1723.0608304615307,
+                    "mean": 2.730682774107022,
+                    "min": 0.0,
+                    "max": 54.70987956496538
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19063898624,
+              "peak_gpu_reserved_bytes": 20042481664,
+              "nvml_peak_process_gpu_bytes": 20535312384,
+              "nvml_peak_device_used_bytes": 21221867520
             },
             "tasks": [
               "EPM",
               "ASI",
               "HLD"
             ],
-            "task_macro_fixed_denominator": null
+            "task_macro_fixed_denominator": 0.5125078646584024
           },
           "实时感知": {
             "expected": 837,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 837,
+            "successful": 837,
+            "correct": 530,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 837,
-            "unfinished": 837,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.6332138590203107,
+            "interim_accuracy_attempted": 0.6332138590203107,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 837,
+                "sum": 29351.231966638836,
+                "mean": 35.0671827558409,
+                "min": 0.7271837589796633,
+                "max": 228.958818382991
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 837,
+                "sum": 29351.231966638836,
+                "mean": 35.0671827558409,
+                "min": 0.7271837589796633,
+                "max": 228.958818382991
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 837,
+                    "sum": 26.555711196899413,
+                    "mean": 0.031727253520787826,
+                    "min": 0.026021888732910156,
+                    "max": 0.4069652500152588
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 837,
+                    "sum": 29.66760531425476,
+                    "mean": 0.035445167639491945,
+                    "min": 0.029839359283447265,
+                    "max": 0.07547494506835938
+                  },
+                  "answer_seconds": {
+                    "count": 837,
+                    "sum": 62.047891100286506,
+                    "mean": 0.07413129163714038,
+                    "min": 0.06259791798947845,
+                    "max": 0.5075404020026326
+                  },
+                  "cleanup_seconds": {
+                    "count": 837,
+                    "sum": 151.1685175314633,
+                    "mean": 0.18060754782731575,
+                    "min": 0.12801352998940274,
+                    "max": 1.6720802609925158
+                  },
+                  "e2e_seconds": {
+                    "count": 837,
+                    "sum": 29350.428941790567,
+                    "mean": 35.066223347420035,
+                    "min": 0.7263614410185255,
+                    "max": 228.9575853960123
+                  },
+                  "memory_manage_seconds": {
+                    "count": 837,
+                    "sum": 5863.112852971608,
+                    "mean": 7.004913802833462,
+                    "min": 0.26552509202156216,
+                    "max": 93.25933322904166
+                  },
+                  "preprocess_seconds": {
+                    "count": 837,
+                    "sum": 2887.1072024888417,
+                    "mean": 3.449351496402439,
+                    "min": 0.044846831005997956,
+                    "max": 25.08875108594657
+                  },
+                  "video_decode_seconds": {
+                    "count": 837,
+                    "sum": 17955.38533222217,
+                    "mean": 21.4520732762511,
+                    "min": 0.1539976130006835,
+                    "max": 181.01857874100097
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 837,
+                    "sum": 29198.930358961894,
+                    "mean": 34.88522145634635,
+                    "min": 0.5812352510110941,
+                    "max": 228.74078590399586
+                  },
+                  "vision_encode_seconds": {
+                    "count": 837,
+                    "sum": 2419.6028042489343,
+                    "mean": 2.890803828254402,
+                    "min": 0.047751225996762514,
+                    "max": 19.363231231021928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 837,
+                    "sum": 1584.6412829506298,
+                    "mean": 1.8932392866793666,
+                    "min": 0.2297069779888261,
+                    "max": 2.3935756770079024
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 837,
+                    "sum": 552.4561776813352,
+                    "mean": 0.6600432230362429,
+                    "min": 0.0,
+                    "max": 6.528759289853042
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 837,
+                    "sum": 68.5367183733324,
+                    "mean": 0.08188377344484159,
+                    "min": 0.0,
+                    "max": 1.295679607981583
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 837,
+                    "sum": 3153.0244272617856,
+                    "mean": 3.7670542739089434,
+                    "min": 0.0,
+                    "max": 73.70111628100858
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 837,
+                    "sum": 86.93067362716829,
+                    "mean": 0.10385982512206486,
+                    "min": 0.0,
+                    "max": 6.839849623036571
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 837,
+                    "sum": 3239.955100888954,
+                    "mean": 3.8709140990310082,
+                    "min": 0.0,
+                    "max": 80.54096590404515
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 837,
+                    "sum": 26.555711196899413,
+                    "mean": 0.031727253520787826,
+                    "min": 0.026021888732910156,
+                    "max": 0.4069652500152588
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 837,
+                    "sum": 29.66760531425476,
+                    "mean": 0.035445167639491945,
+                    "min": 0.029839359283447265,
+                    "max": 0.07547494506835938
+                  },
+                  "answer_seconds": {
+                    "count": 837,
+                    "sum": 62.047891100286506,
+                    "mean": 0.07413129163714038,
+                    "min": 0.06259791798947845,
+                    "max": 0.5075404020026326
+                  },
+                  "cleanup_seconds": {
+                    "count": 837,
+                    "sum": 151.1685175314633,
+                    "mean": 0.18060754782731575,
+                    "min": 0.12801352998940274,
+                    "max": 1.6720802609925158
+                  },
+                  "e2e_seconds": {
+                    "count": 837,
+                    "sum": 29350.428941790567,
+                    "mean": 35.066223347420035,
+                    "min": 0.7263614410185255,
+                    "max": 228.9575853960123
+                  },
+                  "memory_manage_seconds": {
+                    "count": 837,
+                    "sum": 5863.112852971608,
+                    "mean": 7.004913802833462,
+                    "min": 0.26552509202156216,
+                    "max": 93.25933322904166
+                  },
+                  "preprocess_seconds": {
+                    "count": 837,
+                    "sum": 2887.1072024888417,
+                    "mean": 3.449351496402439,
+                    "min": 0.044846831005997956,
+                    "max": 25.08875108594657
+                  },
+                  "video_decode_seconds": {
+                    "count": 837,
+                    "sum": 17955.38533222217,
+                    "mean": 21.4520732762511,
+                    "min": 0.1539976130006835,
+                    "max": 181.01857874100097
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 837,
+                    "sum": 29198.930358961894,
+                    "mean": 34.88522145634635,
+                    "min": 0.5812352510110941,
+                    "max": 228.74078590399586
+                  },
+                  "vision_encode_seconds": {
+                    "count": 837,
+                    "sum": 2419.6028042489343,
+                    "mean": 2.890803828254402,
+                    "min": 0.047751225996762514,
+                    "max": 19.363231231021928
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 837,
+                    "sum": 1584.6412829506298,
+                    "mean": 1.8932392866793666,
+                    "min": 0.2297069779888261,
+                    "max": 2.3935756770079024
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 837,
+                    "sum": 552.4561776813352,
+                    "mean": 0.6600432230362429,
+                    "min": 0.0,
+                    "max": 6.528759289853042
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 837,
+                    "sum": 68.5367183733324,
+                    "mean": 0.08188377344484159,
+                    "min": 0.0,
+                    "max": 1.295679607981583
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 837,
+                    "sum": 3153.0244272617856,
+                    "mean": 3.7670542739089434,
+                    "min": 0.0,
+                    "max": 73.70111628100858
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 837,
+                    "sum": 86.93067362716829,
+                    "mean": 0.10385982512206486,
+                    "min": 0.0,
+                    "max": 6.839849623036571
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 837,
+                    "sum": 3239.955100888954,
+                    "mean": 3.8709140990310082,
+                    "min": 0.0,
+                    "max": 80.54096590404515
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19064613376,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20531118080,
+              "nvml_peak_device_used_bytes": 21217673216
             },
             "tasks": [
               "STU",
@@ -5422,87 +8812,313 @@
               "OCR",
               "FPD"
             ],
-            "task_macro_fixed_denominator": null
+            "task_macro_fixed_denominator": 0.6370161090234979
           },
           "前向响应": {
             "expected": 1567,
-            "attempted": 0,
-            "successful": 0,
-            "correct": 0,
+            "attempted": 1567,
+            "successful": 1567,
+            "correct": 793,
             "empty_answers": 0,
             "failed": 0,
             "historical_failed_attempts": 0,
-            "unattempted": 1567,
-            "unfinished": 1567,
-            "coverage_complete": false,
-            "attempt_complete": false,
-            "accuracy_fixed_denominator": null,
-            "interim_accuracy_attempted": null,
+            "unattempted": 0,
+            "unfinished": 0,
+            "coverage_complete": true,
+            "attempt_complete": true,
+            "accuracy_fixed_denominator": 0.5060625398851308,
+            "interim_accuracy_attempted": 0.5060625398851308,
             "timing": {
               "successful_question_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 1567,
+                "sum": 22476.614985979773,
+                "mean": 14.34372366686648,
+                "min": 0.6853636539890431,
+                "max": 122.4816834369849
               },
               "all_attempt_seconds": {
-                "count": 0,
-                "sum": 0,
-                "mean": null,
-                "min": null,
-                "max": null
+                "count": 1567,
+                "sum": 22476.614985979773,
+                "mean": 14.34372366686648,
+                "min": 0.6853636539890431,
+                "max": 122.4816834369849
               },
               "stages": {
-                "successful": {},
-                "all_attempts": {}
+                "successful": {
+                  "answer_decode_seconds": {
+                    "count": 1567,
+                    "sum": 49.132803323745726,
+                    "mean": 0.03135469261247334,
+                    "min": 0.02594713592529297,
+                    "max": 0.08134131240844726
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 63.51183606338501,
+                    "mean": 0.04053084624338546,
+                    "min": 0.029870080947875976,
+                    "max": 0.0506163215637207
+                  },
+                  "answer_seconds": {
+                    "count": 1567,
+                    "sum": 123.46138223732123,
+                    "mean": 0.07878837411443601,
+                    "min": 0.06261398602509871,
+                    "max": 0.14280134602449834
+                  },
+                  "cleanup_seconds": {
+                    "count": 1567,
+                    "sum": 303.09924420982134,
+                    "mean": 0.19342644812368942,
+                    "min": 0.15007911599241197,
+                    "max": 0.256469729996752
+                  },
+                  "e2e_seconds": {
+                    "count": 1567,
+                    "sum": 22475.315321423637,
+                    "mean": 14.342894270212915,
+                    "min": 0.684558199980529,
+                    "max": 122.48099760198966
+                  },
+                  "memory_manage_seconds": {
+                    "count": 1567,
+                    "sum": 8863.49583324694,
+                    "mean": 5.656347053763203,
+                    "min": 0.2646202500036452,
+                    "max": 71.35484455290134
+                  },
+                  "preprocess_seconds": {
+                    "count": 1567,
+                    "sum": 2458.471518311824,
+                    "mean": 1.5689033301287965,
+                    "min": 0.019246734998887405,
+                    "max": 12.92773466106155
+                  },
+                  "video_decode_seconds": {
+                    "count": 1567,
+                    "sum": 7321.3445981750265,
+                    "mean": 4.672204593602442,
+                    "min": 0.03447763601434417,
+                    "max": 37.279658701998414
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 1567,
+                    "sum": 22171.59679650629,
+                    "mean": 14.149072620616648,
+                    "min": 0.5054329699778464,
+                    "max": 122.2857924689888
+                  },
+                  "vision_encode_seconds": {
+                    "count": 1567,
+                    "sum": 3396.468105781183,
+                    "mean": 2.167497195776122,
+                    "min": 0.04784599400591105,
+                    "max": 20.524725225986913
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 2621.075752436591,
+                    "mean": 1.6726711885364332,
+                    "min": 0.22997161600505933,
+                    "max": 2.3472507469996344
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 739.3290179874166,
+                    "mean": 0.47181175366140177,
+                    "min": 0.0,
+                    "max": 7.970315749000292
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 1567,
+                    "sum": 109.0981693318463,
+                    "mean": 0.06962231610200785,
+                    "min": 0.0,
+                    "max": 1.7294316579354927
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 1567,
+                    "sum": 4656.704854798067,
+                    "mean": 2.9717325174205915,
+                    "min": 0.0,
+                    "max": 55.582726384018315
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 1567,
+                    "sum": 142.26607928524027,
+                    "mean": 0.09078881894399507,
+                    "min": 0.0,
+                    "max": 4.03328206500737
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 1567,
+                    "sum": 4798.970934083307,
+                    "mean": 3.0625213363645862,
+                    "min": 0.0,
+                    "max": 59.54227445810102
+                  }
+                },
+                "all_attempts": {
+                  "answer_decode_seconds": {
+                    "count": 1567,
+                    "sum": 49.132803323745726,
+                    "mean": 0.03135469261247334,
+                    "min": 0.02594713592529297,
+                    "max": 0.08134131240844726
+                  },
+                  "answer_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 63.51183606338501,
+                    "mean": 0.04053084624338546,
+                    "min": 0.029870080947875976,
+                    "max": 0.0506163215637207
+                  },
+                  "answer_seconds": {
+                    "count": 1567,
+                    "sum": 123.46138223732123,
+                    "mean": 0.07878837411443601,
+                    "min": 0.06261398602509871,
+                    "max": 0.14280134602449834
+                  },
+                  "cleanup_seconds": {
+                    "count": 1567,
+                    "sum": 303.09924420982134,
+                    "mean": 0.19342644812368942,
+                    "min": 0.15007911599241197,
+                    "max": 0.256469729996752
+                  },
+                  "e2e_seconds": {
+                    "count": 1567,
+                    "sum": 22475.315321423637,
+                    "mean": 14.342894270212915,
+                    "min": 0.684558199980529,
+                    "max": 122.48099760198966
+                  },
+                  "memory_manage_seconds": {
+                    "count": 1567,
+                    "sum": 8863.49583324694,
+                    "mean": 5.656347053763203,
+                    "min": 0.2646202500036452,
+                    "max": 71.35484455290134
+                  },
+                  "preprocess_seconds": {
+                    "count": 1567,
+                    "sum": 2458.471518311824,
+                    "mean": 1.5689033301287965,
+                    "min": 0.019246734998887405,
+                    "max": 12.92773466106155
+                  },
+                  "video_decode_seconds": {
+                    "count": 1567,
+                    "sum": 7321.3445981750265,
+                    "mean": 4.672204593602442,
+                    "min": 0.03447763601434417,
+                    "max": 37.279658701998414
+                  },
+                  "video_to_answer_seconds": {
+                    "count": 1567,
+                    "sum": 22171.59679650629,
+                    "mean": 14.149072620616648,
+                    "min": 0.5054329699778464,
+                    "max": 122.2857924689888
+                  },
+                  "vision_encode_seconds": {
+                    "count": 1567,
+                    "sum": 3396.468105781183,
+                    "mean": 2.167497195776122,
+                    "min": 0.04784599400591105,
+                    "max": 20.524725225986913
+                  },
+                  "within_memory_answer_visual_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 2621.075752436591,
+                    "mean": 1.6726711885364332,
+                    "min": 0.22997161600505933,
+                    "max": 2.3472507469996344
+                  },
+                  "within_memory_event_prefill_seconds": {
+                    "count": 1567,
+                    "sum": 739.3290179874166,
+                    "mean": 0.47181175366140177,
+                    "min": 0.0,
+                    "max": 7.970315749000292
+                  },
+                  "within_memory_kv_compression_seconds": {
+                    "count": 1567,
+                    "sum": 109.0981693318463,
+                    "mean": 0.06962231610200785,
+                    "min": 0.0,
+                    "max": 1.7294316579354927
+                  },
+                  "within_memory_summary_append_seconds": {
+                    "count": 1567,
+                    "sum": 4656.704854798067,
+                    "mean": 2.9717325174205915,
+                    "min": 0.0,
+                    "max": 55.582726384018315
+                  },
+                  "within_memory_summary_rewrite_seconds": {
+                    "count": 1567,
+                    "sum": 142.26607928524027,
+                    "mean": 0.09078881894399507,
+                    "min": 0.0,
+                    "max": 4.03328206500737
+                  },
+                  "within_memory_summary_seconds": {
+                    "count": 1567,
+                    "sum": 4798.970934083307,
+                    "mean": 3.0625213363645862,
+                    "min": 0.0,
+                    "max": 59.54227445810102
+                  }
+                }
               },
               "phase_timing_unavailable_attempts": 0,
               "note": "CUDA-synchronized question time includes decode/sample, preprocessing, vision, memory/summary/KV and answering; excludes load/warmup and result I/O. Nested phase times must not be added. Failed attempts without adapter results retain total time/resources but have unavailable phase breakdowns, not zero phase cost."
             },
             "gpu_peaks_bytes": {
-              "peak_gpu_allocated_bytes": null,
-              "peak_gpu_reserved_bytes": null,
-              "nvml_peak_process_gpu_bytes": null,
-              "nvml_peak_device_used_bytes": null
+              "peak_gpu_allocated_bytes": 19065275904,
+              "peak_gpu_reserved_bytes": 20038287360,
+              "nvml_peak_process_gpu_bytes": 20531118080,
+              "nvml_peak_device_used_bytes": 21217673216
             },
             "tasks": [
               "REC",
               "SSR",
               "CRR"
             ],
-            "task_macro_fixed_denominator": null
+            "task_macro_fixed_denominator": 0.527515325033444
           }
         },
-        "three_group_macro_fixed_denominator": null,
-        "official_nonempty_denominator": 0,
-        "official_nonempty_accuracy": null,
+        "three_group_macro_fixed_denominator": 0.5590130995717814,
+        "official_nonempty_denominator": 3035,
+        "official_nonempty_accuracy": 0.544316309719934,
         "unsuccessful_question_ids": [],
         "model_loading_seconds": {
-          "count": 0,
-          "sum": 0,
-          "mean": null,
-          "min": null,
-          "max": null
+          "count": 2,
+          "sum": 86.00907585299865,
+          "mean": 43.004537926499324,
+          "min": 13.418982213988784,
+          "max": 72.59009363900987
         },
         "warmup_seconds": {
-          "count": 0,
-          "sum": 0,
-          "mean": null,
-          "min": null,
-          "max": null
+          "count": 2,
+          "sum": 1.9075247869768646,
+          "mean": 0.9537623934884323,
+          "min": 0.8595484309771564,
+          "max": 1.0479763559997082
         },
-        "first_question_started_unix": null,
-        "last_question_finished_unix": null,
-        "question_observation_wall_span_seconds": null
+        "first_question_started_unix": 1795716868.6874268,
+        "last_question_finished_unix": 1795799994.2208014,
+        "question_observation_wall_span_seconds": 83125.53337454796
       },
       "worker_wall_observed_lower_bound_seconds": null,
       "worker_wall_observed_seconds": 0,
       "unknown_interrupted_worker_exit_count": 0,
       "wall_timing_note": "Server downtime excluded. Interrupted worker exit is unknown; only its verified alive-time lower bound is included. Current live worker contributes elapsed time at this snapshot.",
       "prediction_evidence": [],
-      "final_accuracy_display": "S2",
-      "final_resources_display": "S2",
+      "final_accuracy_display": 0.5785138519347105,
+      "final_resources_display": "recorded",
       "progress_snapshot": {
         "title": "C3视觉KV使用滑动窗口替代S评分",
         "status": "running_shard0",
@@ -6539,7 +10155,11 @@
         "unknown_worker_wall_count": 0,
         "worker_wall_seconds": 32362.345034122467
       },
-      "snapshot_note": "Formal evaluation is incomplete; interim task rates are not final scores."
+      "snapshot_note": "Formal evaluation is incomplete; interim task rates are not final scores.",
+      "source_summary": "remote_execution/c3_ablation_fifo_visual_kv_final_report/summary.json",
+      "source_summary_sha256": "a87e07498dd4eab3ad773d2d55d586d49955fbf76695d725cea1591b2fe5068a",
+      "final_report_archive": "remote_execution/streamforest_stage4_c3_fifo_visual_kv_ovobench_results.tar.gz",
+      "final_report_archive_sha256": "1f499549d00c4fb5c9cfe2e5ff7af1205e785a6006a9b66b4ca1c5a663c00997"
     },
     "B2/OVOBench_full3035": {
       "parent_document_group": "B2",
@@ -9133,5 +12753,5 @@
     ]
   },
   "synchronization_note": "One verified snapshot, not an automatically refreshed GitHub monitor. Server1 data and experiment identifiers preserved.",
-  "data_cutoff_note": "C5 final report and C6 live dashboard were read in one CPU-only update."
+  "data_cutoff_note": "C5 and C6 final reports independently audited on CPU; both formal OVOBench runs complete."
 }
