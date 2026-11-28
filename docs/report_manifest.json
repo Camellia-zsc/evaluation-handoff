@@ -19,7 +19,9 @@
     "B2/nonRealtime1750",
     "C0/nonRealtime1750",
     "C3/StreamingBench_nonRealtime1750",
-    "C7/OVOBench_full3035_no_event_text"
+    "C7/OVOBench_full3035_no_event_text",
+    "C5/OVOBench_full3035",
+    "C6/OVOBench_full3035"
   ],
   "partial_group": "B1/StreamingBench_realtime2500: 59/2500 running",
   "unchanged_external_pending_groups": [
