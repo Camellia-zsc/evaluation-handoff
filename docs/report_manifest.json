@@ -1,25 +1,27 @@
 {
-  "updated_at": "2026-11-28T01:21:28+08:00",
+  "updated_at": "2026-11-28T16:28:24.457876+08:00",
   "updated_by": "S2",
-  "report_data_cutoff": "2026-11-28T01:21:28+08:00",
+  "report_data_cutoff": "2026-11-28T16:28:24.457876+08:00",
   "files": [
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.docx",
-      "sha256": "19b6c07c89a69e66d03fa5e18d4fb42e8c90f35cf8c4034bfc700ece4010bfc4",
-      "bytes": 80357
+      "sha256": "29e7906c6fa321840c254d2bd846b2bb4f39034442dfb04b689a364fd4930b40",
+      "bytes": 79773
     },
     {
       "path": "docs/EviM_三组底座实验与统一资源开销_封尾计时修订版_新增评测数据_20261123.pdf",
-      "sha256": "811c16757b74e8f6e0427bbf0acb855d09f398c16721f7145be041b41e1023e1",
-      "bytes": 1172879
+      "sha256": "9de511b392b4fe5ebe80e9e9c7b5c9a66a637293bb8a4a0758212c7ba24f9899",
+      "bytes": 301798
     }
   ],
   "local_results_snapshot": "results/server1/latest.json",
   "new_complete_groups": [
     "B2/nonRealtime1750",
-    "C0/nonRealtime1750"
+    "C0/nonRealtime1750",
+    "C3/StreamingBench_nonRealtime1750",
+    "C7/OVOBench_full3035_no_event_text"
   ],
-  "partial_group": "C7: 2079/3035 attempted; final accuracy withheld; B1 realtime2500 queued",
+  "partial_group": "B1/StreamingBench_realtime2500: 55/2500 running",
   "unchanged_external_pending_groups": [
     "C5",
     "C6"

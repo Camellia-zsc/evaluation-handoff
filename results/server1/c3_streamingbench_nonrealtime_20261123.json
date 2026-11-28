@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-28T16:20:47.948482+08:00",
+  "experiment": "C3_StreamingBench_nonRealtime1750",
+  "status": "complete",
+  "expected": 1750,
+  "attempted": 1750,
+  "successful": 1750,
+  "failed": 0,
+  "correct": 689,
+  "accuracy_micro_fixed_denominator": 0.39371428571428574,
+  "accuracy_omni_task_macro": 0.403,
+  "accuracy_contextual_task_macro": 0.38133333333333336,
+  "tasks": {
+    "ER": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 107,
+      "accuracy_fixed_denominator": 0.428
+    },
+    "MA": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 121,
+      "accuracy_fixed_denominator": 0.484
+    },
+    "SCU": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 74,
+      "accuracy_fixed_denominator": 0.296
+    },
+    "SD": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 101,
+      "accuracy_fixed_denominator": 0.404
+    },
+    "MCR": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 87,
+      "accuracy_fixed_denominator": 0.348
+    },
+    "ACU": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 98,
+      "accuracy_fixed_denominator": 0.392
+    },
+    "SQA": {
+      "expected": 250,
+      "attempted": 250,
+      "successful": 250,
+      "failed": 0,
+      "correct": 101,
+      "accuracy_fixed_denominator": 0.404
+    }
+  },
+  "seconds": {
+    "count": 1750,
+    "sum": 70987.39068225678,
+    "mean": 40.56422324700387,
+    "max": 218.2630956247449
+  },
+  "peak_gpu_allocated_bytes": {
+    "count": 1750,
+    "sum": 32840514753024.0,
+    "mean": 18766008430.299427,
+    "max": 19069444608.0
+  },
+  "peak_gpu_reserved_bytes": {
+    "count": 1750,
+    "sum": 34256495575040.0,
+    "mean": 19575140328.594284,
+    "max": 20042481664.0
+  },
+  "question_latency_seconds": {
+    "count": 0,
+    "sum": 0,
+    "mean": null,
+    "max": null
+  },
+  "ttft_seconds": {
+    "count": 0,
+    "sum": 0,
+    "mean": null,
+    "max": null
+  },
+  "note": "B0 has one exhausted failed question; C3 itself is complete.",
+  "source": "outputs/streamforest_streamingbench_nonrt_6groups_20261123/comparison/metrics.json"
+}
